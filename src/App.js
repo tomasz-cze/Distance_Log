@@ -4,7 +4,7 @@ import {CompanyForm} from "./js/companyForm";
 import {NewRecordForm} from "./js/newRecordForm";
 import {MainTable} from "./js/mainTable";
 import {Footer} from "./js/footer";
-// import main from "./scss"
+import "./scss/main.css"
 
 
 

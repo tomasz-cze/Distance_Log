@@ -4,3 +4,16 @@
 .container {
   width: 1024px;
   margin: 0 auto; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid blue; }
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid blue; }
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; }

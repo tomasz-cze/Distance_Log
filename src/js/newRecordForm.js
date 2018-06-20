@@ -39,14 +39,11 @@ class NewRecordForm extends Component{
             routeLength: event.target.value
         })
     };
-
     create = () => {
         this.setState ({
             btn: true
         })
     };
-
-
     render(){
         return (
             <div className="newRecordForm container">
@@ -85,7 +82,6 @@ class NewRecordForm extends Component{
                         </div>
                     </div>
                 </div>
-
                 <div className="homeOffice">
                     <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca i będziesz mógł to edytować.</div>
                     <div>
@@ -96,15 +92,12 @@ class NewRecordForm extends Component{
                     </div><div>
                         <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routLength}/>
                     </div>
-
                 </div>
                 <div>
                     <button onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
                 </div>
                 {this.state.btn === true && <MainTable capacity={this.props.capacity} km={this.state.routeLength} workPoint={this.state.workPoint} homePoint={this.state.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
-
-
-            </div>
+                </div>
         )
     }
 }

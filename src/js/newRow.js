@@ -14,6 +14,9 @@ class NewRow extends Component {
             text: e.target.value
         })
     };
+    add = () => {
+        this.props.showPopUp()
+    };
 
     remove = (event) => {
         this.props.remove(event)
@@ -28,7 +31,6 @@ class NewRow extends Component {
         let rate = "";
         if(this.props.capacity == 0) {
             rate = 0.5214;
-
         } else {
             rate = 0.8358
         }
@@ -44,15 +46,12 @@ class NewRow extends Component {
                 <td key={index+"g"}>{this.props.km * rate }</td>
                 <td key={index+"h"}><textarea onChage={e => this.changeText(e)} value={this.state.text}></textarea></td>
                 <td key={index+"i"}>
-                    <button>Dodaj trasę</button>
+                    <button onClick={element => this.add(index)}>Dodaj trasę</button>
                     <button onClick={element => this.remove(index)}>Usuń</button>
                 </td>
             </tr>
         )
-
-
     }
 }
-
 
 export {NewRow}

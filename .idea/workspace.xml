@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf3659c-0fa1-4f4b-8df7-26f9cbb6e3ad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/popUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/companyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/companyForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/mainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/mainTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/newRecordForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRecordForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/newRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/popUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/popUp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +35,11 @@
       <file leaf-file-name="mainTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="109">
+              <caret line="46" column="189" selection-start-line="46" selection-start-column="189" selection-end-line="46" selection-end-column="189" />
+              <folding>
+                <element signature="e#80#112#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +47,8 @@
       <file leaf-file-name="newRow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="252">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -55,8 +59,8 @@
       <file leaf-file-name="newRecordForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-322">
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            <state relative-caret-position="-479">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -67,8 +71,8 @@
       <file leaf-file-name="popUp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/popUp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="224">
+              <caret line="16" column="114" selection-start-line="16" selection-start-column="114" selection-end-line="16" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -76,8 +80,8 @@
       <file leaf-file-name="companyForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="-297">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -100,11 +104,11 @@
         <option value="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_companyForm.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss" />
-        <option value="$PROJECT_DIR$/src/js/companyForm.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/js/newRecordForm.js" />
-        <option value="$PROJECT_DIR$/src/js/newRow.js" />
+        <option value="$PROJECT_DIR$/src/js/companyForm.js" />
         <option value="$PROJECT_DIR$/src/js/mainTable.js" />
+        <option value="$PROJECT_DIR$/src/js/newRow.js" />
         <option value="$PROJECT_DIR$/src/js/popUp.js" />
       </list>
     </option>
@@ -213,12 +217,12 @@
       <updated>1529398414318</updated>
       <workItem from="1529398418795" duration="10931000" />
       <workItem from="1529415517491" duration="3472000" />
-      <workItem from="1529482234197" duration="19580000" />
+      <workItem from="1529482234197" duration="21448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33983000" />
+    <option name="totallyTimeSpent" value="35851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1309" height="772" extended-state="6" />
@@ -314,6 +318,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding>
+            <element signature="e#80#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -335,6 +342,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#80#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -456,20 +459,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
+    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-297">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="-479">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -478,15 +478,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="109">
+          <caret line="46" column="189" selection-start-line="46" selection-start-column="189" selection-end-line="46" selection-end-column="189" />
+          <folding>
+            <element signature="e#80#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/popUp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="224">
+          <caret line="16" column="114" selection-start-line="16" selection-start-column="114" selection-end-line="16" selection-end-column="114" />
         </state>
       </provider>
     </entry>

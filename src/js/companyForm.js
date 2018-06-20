@@ -19,11 +19,9 @@ class CompanyForm extends Component{
 
         }
     }
-
     changeCapacity = (e) => {
         this.props.giveCapacity(e.target.value)
     };
-
     change = (event) => {
         this.setState ({
             [event.target.id]: event.target.value
@@ -31,7 +29,6 @@ class CompanyForm extends Component{
     };
 
     render(){
-
         return (
             <div className="companyForm container">
                 <div> DANE FIRMY

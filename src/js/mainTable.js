@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 // import Moment from 'react-moment';
 import {NewRow} from "./newRow";
+import {PopUp} from "./popUp";
 
 
 class MainTable extends Component{
     constructor(props){
         super (props);
         this.state = {
-            table1: []
+            table1: [],
+            popUpStatus: false
         }
     }
 
@@ -24,8 +26,12 @@ class MainTable extends Component{
 
         this.setState({
             table1: result
-
         });
+    }
+    showPopUp = () => {
+        this.setState ({
+            popUpStatus: true
+        })
     }
 
     removeDay = (i) => {
@@ -38,10 +44,9 @@ class MainTable extends Component{
 
     render(){
         let calendar = this.state.table1.map((el, index)=>{
-            return <NewRow capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint} workPoint={this.props.workPoint}/>
+            return <NewRow capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint} workPoint={this.props.workPoint} showPopUp={this.showPopUp}/>
         });
         return (
-
                 <div className="mainTable container">
                     <div>
                         <div className="printHeader"></div>
@@ -62,12 +67,11 @@ class MainTable extends Component{
                             </tr>
                             {calendar}
 
-
                             </tbody>
                         </table>
+                        {this.state.popUpStatus === true && <PopUp />}
                     </div>
                 </div>
-
         )
     }
 }

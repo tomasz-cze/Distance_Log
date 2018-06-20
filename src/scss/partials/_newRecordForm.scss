@@ -1,0 +1,32 @@
+
+.newRecordForm {
+  margin-bottom: 20px;
+  div:first-child {
+    width: 50%;
+    float: left;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+  div:last-child {
+    width: 50%;
+    float: left;
+    .calendar {
+      width: 50%;
+      float: left;
+    }
+    .homeOffice {
+      width: 50%;
+      float: left;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+.mainTable {
+  width: 100%
+}

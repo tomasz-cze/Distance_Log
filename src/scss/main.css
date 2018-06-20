@@ -5,6 +5,44 @@
   width: 1024px;
   margin: 0 auto; }
 
+.companyForm {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; }
+  .companyForm div:first-child {
+    width: 30%; }
+  .companyForm div:nth-child(2) {
+    width: 30%; }
+  .companyForm div:last-child {
+    width: 30%; }
+  .companyForm form {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.newRecordForm {
+  margin-bottom: 20px; }
+  .newRecordForm div:first-child {
+    width: 50%;
+    float: left; }
+    .newRecordForm div:first-child h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%; }
+  .newRecordForm div:last-child {
+    width: 50%;
+    float: left; }
+    .newRecordForm div:last-child .calendar {
+      width: 50%;
+      float: left; }
+    .newRecordForm div:last-child .homeOffice {
+      width: 50%;
+      float: left; }
+    .newRecordForm div:last-child button {
+      margin: 0 auto; }
+
+.mainTable {
+  width: 100%; }
+
 table {
   border-collapse: collapse;
   width: 100%;

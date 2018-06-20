@@ -15,7 +15,6 @@ class App extends Component {
             <Header></Header>
             <CompanyForm></CompanyForm>
             <NewRecordForm></NewRecordForm>
-            <MainTable></MainTable>
             <Footer></Footer>
         </div>
     );

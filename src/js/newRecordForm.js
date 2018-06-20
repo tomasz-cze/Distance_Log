@@ -1,15 +1,46 @@
 import React, { Component } from 'react';
+import {MainTable} from "./mainTable";
 
 class NewRecordForm extends Component{
     constructor(props){
         super(props);
         this.state = {
-            choseMonth: "",
-            choseYear: "",
+            chosenMonth: "",
+            chosenYear: "",
             homePoint: "",
-            workPoint: ""
+            workPoint: "",
+            btn: false
         }
     }
+
+    choseMonth = (event) => {
+        this.setState ({
+            chosenMonth: event.target.value
+        })
+    };
+    choseYear = (event) => {
+        this.setState ({
+            chosenYear: event.target.value
+        })
+    };
+    changeA = (event) => {
+        this.setState ({
+            homePoint: event.target.value
+        })
+    };
+    changeB = (event) => {
+        this.setState ({
+            workPoint: event.target.value
+        })
+    };
+
+    create = () => {
+        this.setState ({
+            btn: true
+        })
+    };
+
+
     render(){
         return (
             <div className="newRecordForm container">
@@ -18,18 +49,18 @@ class NewRecordForm extends Component{
                     <div>
                         Wybierz miesiąc
                         <select onChange={event => this.choseMonth(event)} value={this.state.choseMonth}>
-                            <option>Styczeń</option>
-                            <option>Luty</option>
-                            <option>Marzec</option>
-                            <option>Kwiecień</option>
-                            <option>Maj</option>
-                            <option>Czerwiec</option>
-                            <option>Lipiec</option>
-                            <option>Sierpień</option>
-                            <option>Wrzesień</option>
-                            <option>Październik</option>
-                            <option>Listopad</option>
-                            <option>Grudzień</option>
+                            <option value={1}>Styczeń</option>
+                            <option value={2}>Luty</option>
+                            <option value={3}>Marzec</option>
+                            <option value={4}>Kwiecień</option>
+                            <option value={5}>Maj</option>
+                            <option value={6}>Czerwiec</option>
+                            <option value={7}>Lipiec</option>
+                            <option value={8}>Sierpień</option>
+                            <option value={9}>Wrzesień</option>
+                            <option value={10}>Październik</option>
+                            <option value={11}>Listopad</option>
+                            <option value={12}>Grudzień</option>
                         </select>
                     </div>
                     <div>
@@ -47,12 +78,17 @@ class NewRecordForm extends Component{
                 <div className="homeOffice">
                     <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca i będziesz mógł to edytować.</div>
                     <div>
-                        <input type="text" placeholder="Dom" value={this.state.homePoint}/>
+                        <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
                     </div>
                     <div>
-                        <input type="text" placeholder="Praca" value={this.state.workPoint}/>
+                        <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
                     </div>
                 </div>
+                <div>
+                    <button onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
+                </div>
+                {this.state.btn === true && <MainTable chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
+
 
             </div>
         )

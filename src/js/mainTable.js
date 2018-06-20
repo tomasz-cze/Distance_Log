@@ -52,7 +52,7 @@ class MainTable extends Component{
                             <tr>
                                 <th>Data</th>
                                 <th>Dzień tygodnia</th>
-                                <th style={{width: "400px"}}>Trasa</th>
+                                <th>Trasa</th>
                                 <th>Cel wyjazdy</th>
                                 <th>Ilość km</th>
                                 <th>Stawka/km</th>

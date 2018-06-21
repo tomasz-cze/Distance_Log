@@ -58,7 +58,7 @@ class NewRecordForm extends Component{
                 </div>
                 <div className="calendar">
                     <div>
-                        Wybierz miesiąc
+                        Wybierz miesiąc <br/>
                         <select onChange={event => this.choseMonth(event)} value={this.state.choseMonth}>
                             <option value={1}>Styczeń</option>
                             <option value={2}>Luty</option>
@@ -74,8 +74,8 @@ class NewRecordForm extends Component{
                             <option value={12}>Grudzień</option>
                         </select>
                     </div>
-                    <div>
-                        Wybierz rok
+                    <div><br/>
+                        Wybierz rok<br/>
                         <select onChange={event => this.choseYear(event)} value={this.state.choseYear}>
                             <option>2018</option>
                             <option>2017</option>

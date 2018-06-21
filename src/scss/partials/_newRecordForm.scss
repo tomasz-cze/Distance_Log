@@ -16,11 +16,14 @@
     display: block;
     width: 50%;
     float: left;
+    text-align: center;
   }
   .homeOffice {
+    margin-left: -125px;
     display: block;
     width: 50%;
     float: left;
+    text-align: center;
   }
   .createKM {
     padding: 30px;
@@ -28,6 +31,9 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    button {
+      font-size: 30px;
+    }
   }
 }
 

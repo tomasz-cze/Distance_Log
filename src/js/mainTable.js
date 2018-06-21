@@ -39,12 +39,6 @@ class MainTable extends Component{
            popUpStatus: false
         })
     };
-    // getPoints = (a, b) => {
-    //     this.setState ({
-    //         currentPointA: a,
-    //         currentPointB: b
-    //     })
-    // };
 
     removeDay = (i) => {
         let removedTable = this.state.table1;
@@ -54,13 +48,12 @@ class MainTable extends Component{
         })
     };
 
-    addNewRow = (a, b, c) => {
+    addNewRow = (a, b, c, d) => {
         let addedTable = this.state.table1;
-       addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
+       addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={d} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
         this.setState ({
             tabel1: addedTable
         });
-        console.log( this.state.currentPointA )
     };
 
     render(){

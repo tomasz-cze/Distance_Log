@@ -86,6 +86,17 @@ class MainTable extends Component{
                                 <th>Opcje</th>
                             </tr>
                             {calendar}
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Razem kilometrów</th>
+                                <th></th>
+                                <th>Razem Wartość</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
                             </tbody>
                         </table>
                         {this.state.popUpStatus === true && <PopUp getPoints={this.getPoints} addNewRow={this.addNewRow} hidePopUp={this.hidePopUp}/>}

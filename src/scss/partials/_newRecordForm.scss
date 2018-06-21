@@ -3,7 +3,8 @@
   display: block;
   margin-bottom: 20px;
   width: 1024px;
-  div:first-child {
+
+  .titleNewRecord {
     width: 100%;
     display: block;
     h1 {
@@ -14,30 +15,41 @@
   }
   .calendar {
     display: block;
-    width: 50%;
+    width: 150px;
+    background-color: azure;
     float: left;
     text-align: center;
+    background-color: azure;
+    border-radius: 30%;
+    padding-bottom: 10px;
   }
   .homeOffice {
-    margin-left: -125px;
     display: block;
-    width: 50%;
+    width: 230px;
     float: left;
     text-align: center;
-  }
-  .createKM {
-    padding: 30px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    button {
-      font-size: 30px;
-    }
+    background-color: azure;
+    border-radius: 30%;
+    padding: 20px;
   }
 }
 
+.boxTableData {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.createKM {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  button {
+    font-size: 30px;
+  }
+}
 
 .mainTable {
   width: 100%

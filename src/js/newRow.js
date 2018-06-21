@@ -37,7 +37,7 @@ class NewRow extends Component {
             rate = 0.8358
         }
         return (
-            <tr key={index}>
+            <tr height="20px"  key={index}>
                 <td key={index+"a"}><Moment format="D">{el}</Moment></td>
                 <td key={index+"b"}><Moment format="dddd">{el}</Moment></td>
                 <td key={index+"c"}>{homePoint}-{workPoint}, {workPoint}-{homePoint}</td>

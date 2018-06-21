@@ -53,60 +53,63 @@ class NewRecordForm extends Component{
     render(){
         return (
             <div className="newRecordForm container">
-                <div>
+                <div className="titleNewRecord">
                     <h1>Stworz nową kilometrówkę</h1>
                 </div>
-                <div className="calendar">
-                    <div>
-                        Wybierz miesiąc <br/>
-                        <select onChange={event => this.choseMonth(event)} value={this.state.choseMonth}>
-                            <option value={1}>Styczeń</option>
-                            <option value={2}>Luty</option>
-                            <option value={3}>Marzec</option>
-                            <option value={4}>Kwiecień</option>
-                            <option value={5}>Maj</option>
-                            <option value={6}>Czerwiec</option>
-                            <option value={7}>Lipiec</option>
-                            <option value={8}>Sierpień</option>
-                            <option value={9}>Wrzesień</option>
-                            <option value={10}>Październik</option>
-                            <option value={11}>Listopad</option>
-                            <option value={12}>Grudzień</option>
-                        </select>
-                    </div>
-                    <div><br/>
-                        Wybierz rok<br/>
-                        <select onChange={event => this.choseYear(event)} value={this.state.choseYear}>
-                            <option>2018</option>
-                            <option>2017</option>
-                            <option>2016</option>
-                            <option>2015</option>
-                            <option>2014</option>
-                            <option>2013</option>
-                        </select>
-                    </div>
+                <div className="boxTableData" >
+                    <div className="calendar">
+                        <div><br/>
+                            Wybierz miesiąc <br/>
+                            <select onChange={event => this.choseMonth(event)} value={this.state.choseMonth}>
+                                <option value={1}>Styczeń</option>
+                                <option value={2}>Luty</option>
+                                <option value={3}>Marzec</option>
+                                <option value={4}>Kwiecień</option>
+                                <option value={5}>Maj</option>
+                                <option value={6}>Czerwiec</option>
+                                <option value={7}>Lipiec</option>
+                                <option value={8}>Sierpień</option>
+                                <option value={9}>Wrzesień</option>
+                                <option value={10}>Październik</option>
+                                <option value={11}>Listopad</option>
+                                <option value={12}>Grudzień</option>
+                            </select>
+                        </div>
+                        <div><br/>
+                            Wybierz rok<br/>
+                            <select onChange={event => this.choseYear(event)} value={this.state.choseYear}>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                            </select>
+                        </div>
 
+                    </div>
+                    <div className="homeOffice">
+                        <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca i będziesz mógł to edytować.</div>
+                        <div>
+                            <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
+                        </div>
+                        <div>
+                            <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
+                        </div>
+                        <div>
+                            <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routLength}/>
+                        </div>
+                        <div>
+                            <select  onChange={e => this.changeSelect(e)}>
+                                <option>Dojazd do pracy</option>
+                                <option>Dojazd do klienta</option>
+                                <option>Transport towaru</option>
+                                <option>Inne</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div className="homeOffice">
-                    <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca i będziesz mógł to edytować.</div>
-                    <div>
-                        <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
-                    </div>
-                    <div>
-                        <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
-                    </div>
-                    <div>
-                        <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routLength}/>
-                    </div>
-                    <div>
-                        <select  onChange={e => this.changeSelect(e)}>
-                            <option>Dojazd do pracy</option>
-                            <option>Dojazd do klienta</option>
-                            <option>Transport towaru</option>
-                            <option>Inne</option>
-                        </select>
-                    </div>
-                </div>
+
                 <div className="createKM">
                     <button onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
                 </div>

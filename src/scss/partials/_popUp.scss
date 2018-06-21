@@ -1,14 +1,18 @@
 .popBackground {
   height: 100vh;
-  background-color: black;
+  background-image: url("../images/droga_noc.jpg");
+  background-size: cover;
   position: fixed;
   top: 0;
   width: 100vw;
   color: white;
+  left: 0;
+  flex-direction: column;
   .popUp {
+    padding-top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0;
+
   }
 }

@@ -49,7 +49,7 @@ class PopUp extends Component{
                     <input type="number" id="distance" onChange={event => this.changePosition (event)} placeholder="Ilość km" value={this.state.distance}></input><br/>
                     Uwzględnij drogę powrotną
                     <input type="checkbox" id="checkbox" onClick={this.checkBox} placeholder="Uwzględnij drogę powrotną" value={this.state.checkbox}></input><br/>
-
+                    <br/>
                     <br/>
                     <select id="selectedType" onChange={event => this.changePosition (event)} value={this.state.selectedType}>
                         <option>Dojazd do klienta</option>

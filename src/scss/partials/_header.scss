@@ -1,0 +1,23 @@
+header {
+  background-color: white;
+  width:1630px;
+  height: 180px;
+  margin-top: -20px;
+
+  padding-top: 20px;
+  .mainLogo {
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    width: 195px;
+    height: 160px;
+    float: left;
+  }
+  .aplicationDescript {
+    float: right;
+    width: 800px;
+    padding-top: 50px;
+    padding-right: 75px;
+    padding-left: 50px;
+  }
+
+}

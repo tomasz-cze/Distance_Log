@@ -25,9 +25,12 @@ class App extends Component {
 
     return (
         <div>
-            <Header></Header>
-            <CompanyForm giveCapacity={this.giveCapacity}></CompanyForm>
-            <NewRecordForm capacity={this.state.capacity}></NewRecordForm>
+            <div className="background">
+                <Header></Header>
+                <CompanyForm giveCapacity={this.giveCapacity}></CompanyForm>
+                <NewRecordForm capacity={this.state.capacity}></NewRecordForm>
+            </div>
+
             <Footer></Footer>
         </div>
     );

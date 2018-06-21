@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background-image: url("../images/droga2.png"); }
+
 .container {
   width: 1024px;
   margin: 0 auto; }
@@ -17,50 +20,96 @@ button {
 select {
   margin-top: 10px; }
 
+header {
+  background-color: white;
+  width: 1630px;
+  height: 180px;
+  margin-top: -20px;
+  padding-top: 20px; }
+  header .mainLogo {
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    width: 195px;
+    height: 160px;
+    float: left; }
+  header .aplicationDescript {
+    float: right;
+    width: 800px;
+    padding-top: 50px;
+    padding-right: 75px;
+    padding-left: 50px; }
+
 .companyForm {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between; }
-  .companyForm div:first-child {
-    width: 30%; }
-  .companyForm div:nth-child(2) {
-    width: 30%; }
-  .companyForm div:last-child {
-    width: 30%; }
-  .companyForm form {
-    margin-top: 20px;
-    margin-bottom: 20px; }
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; }
+  .companyForm input {
+    margin: 5px; }
+  .companyForm .companyData {
+    background-color: azure;
+    border-radius: 30%;
+    width: 250px;
+    height: 250px; }
+  .companyForm .driverData {
+    background-color: azure;
+    border-radius: 30%;
+    width: 250px;
+    height: 250px; }
+  .companyForm .carData {
+    padding-top: 50px;
+    background-color: azure;
+    border-radius: 30%;
+    width: 250px;
+    height: 250px; }
+
+form {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .newRecordForm {
   display: block;
   margin-bottom: 20px;
   width: 1024px; }
-  .newRecordForm div:first-child {
+  .newRecordForm .titleNewRecord {
     width: 100%;
     display: block; }
-    .newRecordForm div:first-child h1 {
+    .newRecordForm .titleNewRecord h1 {
       text-align: center;
       margin-bottom: 30px;
       width: 100%; }
   .newRecordForm .calendar {
     display: block;
-    width: 50%;
+    width: 150px;
+    background-color: azure;
     float: left;
-    text-align: center; }
-  .newRecordForm .homeOffice {
-    margin-left: -125px;
-    display: block;
-    width: 50%;
-    float: left;
-    text-align: center; }
-  .newRecordForm .createKM {
-    padding: 30px;
-    width: 100%;
     text-align: center;
-    display: flex;
-    justify-content: center; }
-    .newRecordForm .createKM button {
-      font-size: 30px; }
+    background-color: azure;
+    border-radius: 30%;
+    padding-bottom: 10px; }
+  .newRecordForm .homeOffice {
+    display: block;
+    width: 230px;
+    float: left;
+    text-align: center;
+    background-color: azure;
+    border-radius: 30%;
+    padding: 20px; }
+
+.boxTableData {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.createKM {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .createKM button {
+    font-size: 30px; }
 
 .mainTable {
   width: 100%; }
@@ -71,29 +120,33 @@ select {
 
 table {
   border-collapse: collapse;
-  width: 1024px;
-  border: 3px solid blue; }
+  width: 100%;
+  border: 3px solid blue;
+  background-color: azure; }
 
 th, td {
   text-align: left;
+  padding: 8px;
   border: 1px solid blue;
-  height: 20px;
-  padding: 1px; }
+  height: 20px; }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
-  height: 20px;
+  height: 15px;
   padding: 3px; }
 
 .popBackground {
   height: 100vh;
-  background-color: black;
+  background-image: url("../images/droga_noc.jpg");
+  background-size: cover;
   position: fixed;
   top: 0;
   width: 100vw;
-  color: white; }
+  color: white;
+  left: 0;
+  flex-direction: column; }
   .popBackground .popUp {
+    padding-top: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    left: 0; }
+    align-items: center; }

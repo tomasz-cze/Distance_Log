@@ -31,7 +31,7 @@ class CompanyForm extends Component{
     render(){
         return (
             <div className="companyForm container">
-                <div> DANE FIRMY
+                <div className="companyData"><br/> DANE FIRMY
                     <form>
                         <input onChange={this.change} id="companyName" type="text" value={this.state.companyName} placeholder="Nazwa firmy"/>
                         <input onChange={this.change} id="companyStreet" type="text" value={this.state.companyStreet} placeholder="Ulica"/>
@@ -40,22 +40,29 @@ class CompanyForm extends Component{
                         <input onChange={this.change} id="companyNip" type="number" value={this.state.companyNip} placeholder="NIP"/>
                     </form>
                 </div>
-                <div> DANE KIEROWCY
+                <div className="driverData"><br/>  DANE KIEROWCY
                     <form>
                         <input onChange={this.change} id="driverName" type="text" value={this.state.driverName} placeholder="Imię"/>
                         <input onChange={this.change} id="diverSurname" type="text" value={this.state.driverSurname} placeholder="Nazwisko"/>
+                        <br/>
+                        Adres zamieszkania kierowcy
+                        <br/>
+
                         <input onChange={this.change} id="diverStreet" type="number" value={this.state.driverStreet} placeholder="Ulica - adres zamieszkania"/>
                         <input onChange={this.change} id="driverPostcode" type="text" value={this.state.driverPostCode} placeholder="Kod pocztowy - adres zamieszkania"/>
                         <input onChange={this.change} id="driverCity" type="number" value={this.state.driverCity} placeholder="Miasto - adres zamieszkania"/>
                     </form>
                 </div>
-                <div> DANE POJAZDU
+                <div className="carData"><br/>  DANE POJAZDU
                     <form>
+                        <div>
                         <input onChange={this.change} id="carRegistration" type="text" value={this.state.carRegistrationNumber} placeholder="Numer rejestracyjny pojazu"/>
                         <select onChange={e => this.changeCapacity(e)} id="carCapity" placeholder="Pojemność silnika">
                             <option value={0}>pojemność &lt; 900cm3</option>
                             <option value={1}>pojemność &gt; 900cm3</option>
                         </select>
+                    </div>
+
                     </form>
                 </div>
             </div>

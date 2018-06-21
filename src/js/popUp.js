@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NewRow} from "./newRow";
 
 class PopUp extends Component{
     constructor(props){
@@ -6,12 +7,23 @@ class PopUp extends Component{
         this.state = {
             display: true,
             pointA: "",
-            pointB: ""
+            pointB: "",
+            selectedType: ""
         }
     }
     close = () => {
-        this.props.hidePopUp()
+        this.props.hidePopUp();
+        this.props.addNewRow(this.state.pointA, this.state.pointB, this.state.selectedType);
+
     };
+
+    changePosition = (event) => {
+        this.setState ({
+            [event.target.id]: event.target.value
+        })
+    };
+
+
 
 
     render(){
@@ -19,9 +31,9 @@ class PopUp extends Component{
             <div className="popBackground">
                 <div className="popUp">
 
-                    <input onChange={event => this.changePop (event)} placeholder="Punkt startowy"></input>
-                    <input onChange={event => this.changePop (event)} placeholder="Punkt docelowy"></input>
-                    <select>
+                    <input id="pointA" onChange={event => this.changePosition (event)} placeholder="Punkt startowy" value={this.state.pointA}></input>
+                    <input id="pointB" onChange={event => this.changePosition (event)} placeholder="Punkt docelowy" value={this.state.pointB}></input>
+                    <select id="selectedType" onChange={event => this.changePosition (event)} value={this.state.selectedType}>
                         <option>Dojazd do klienta</option>
                         <option>Transport towaru</option>
                         <option>Inne</option>

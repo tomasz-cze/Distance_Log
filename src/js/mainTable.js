@@ -9,7 +9,7 @@ class MainTable extends Component{
         super (props);
         this.state = {
             table1: [],
-            popUpStatus: false
+            popUpStatus: false,
         }
     }
 
@@ -28,16 +28,23 @@ class MainTable extends Component{
             table1: result
         });
     }
-    showPopUp = () => {
+    showPopUp = (index) => {
         this.setState ({
-            popUpStatus: true
-        })
+            popUpStatus: true,
+            currentIndex: index,
+        });
     };
     hidePopUp = () => {
         this.setState({
            popUpStatus: false
         })
     };
+    // getPoints = (a, b) => {
+    //     this.setState ({
+    //         currentPointA: a,
+    //         currentPointB: b
+    //     })
+    // };
 
     removeDay = (i) => {
         let removedTable = this.state.table1;
@@ -47,10 +54,24 @@ class MainTable extends Component{
         })
     };
 
+    addNewRow = (a, b, c) => {
+        let addedTable = this.state.table1;
+       addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
+        this.setState ({
+            tabel1: addedTable
+        });
+        console.log( this.state.currentPointA )
+    };
 
     render(){
         let calendar = this.state.table1.map((el, index)=>{
-            return <NewRow capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint} workPoint={this.props.workPoint}  showPopUp={this.showPopUp}/>
+            if (typeof el.props === 'undefined') {
+                return <NewRow select={this.props.select} addNewRow={this.addNewRow} capacity={this.props.capacity} km={this.props.km}
+                               remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint}
+                               workPoint={this.props.workPoint} showPopUp={this.showPopUp}/>
+            } else {
+                return el;
+            }
         });
         return (
                 <div className="mainTable container">
@@ -72,10 +93,9 @@ class MainTable extends Component{
                                 <th>Opcje</th>
                             </tr>
                             {calendar}
-
                             </tbody>
                         </table>
-                        {this.state.popUpStatus === true && <PopUp hidePopUp={this.hidePopUp}/>}
+                        {this.state.popUpStatus === true && <PopUp getPoints={this.getPoints} addNewRow={this.addNewRow} hidePopUp={this.hidePopUp}/>}
                     </div>
                 </div>
         )

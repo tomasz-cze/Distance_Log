@@ -32,7 +32,12 @@ class MainTable extends Component{
         this.setState ({
             popUpStatus: true
         })
-    }
+    };
+    hidePopUp = () => {
+        this.setState({
+           popUpStatus: false
+        })
+    };
 
     removeDay = (i) => {
         let removedTable = this.state.table1;
@@ -42,9 +47,10 @@ class MainTable extends Component{
         })
     };
 
+
     render(){
         let calendar = this.state.table1.map((el, index)=>{
-            return <NewRow capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint} workPoint={this.props.workPoint} showPopUp={this.showPopUp}/>
+            return <NewRow capacity={this.props.capacity} km={this.props.km} remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint} workPoint={this.props.workPoint}  showPopUp={this.showPopUp}/>
         });
         return (
                 <div className="mainTable container">
@@ -69,7 +75,7 @@ class MainTable extends Component{
 
                             </tbody>
                         </table>
-                        {this.state.popUpStatus === true && <PopUp />}
+                        {this.state.popUpStatus === true && <PopUp hidePopUp={this.hidePopUp}/>}
                     </div>
                 </div>
         )

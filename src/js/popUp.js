@@ -4,28 +4,33 @@ class PopUp extends Component{
     constructor(props){
         super(props);
         this.state = {
-            display: true
+            display: true,
+            pointA: "",
+            pointB: ""
         }
     }
-    hide = () => {
-        this.setState({
-            display: false
-        })
+    close = () => {
+        this.props.hidePopUp()
     };
+
+
     render(){
         return (
-            <div style={{display: this.state.display === true ? "block" : "none", width: "1000px", height: "1000px", position: "absolute", backgroundColor: "black"}} className="popBackground">
+            <div className="popBackground">
                 <div className="popUp">
-                    <input></input>
-                    <input></input>
+
+                    <input onChange={event => this.changePop (event)} placeholder="Punkt startowy"></input>
+                    <input onChange={event => this.changePop (event)} placeholder="Punkt docelowy"></input>
                     <select>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                        <option>Dojazd do klienta</option>
+                        <option>Transport towaru</option>
+                        <option>Inne</option>
+
                     </select>
                     <map></map>
-                    <button onClick={this.hide}>Dodaj trasę</button>
+                    <br/>
+                        <br/>
+                    <button onClick={this.close}>Dodaj trasę</button>
                 </div>
             </div>
         )

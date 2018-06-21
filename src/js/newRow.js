@@ -18,6 +18,7 @@ class NewRow extends Component {
         this.props.showPopUp()
     };
 
+
     remove = (event) => {
         this.props.remove(event)
     };

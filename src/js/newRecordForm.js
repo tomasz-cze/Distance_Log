@@ -61,6 +61,7 @@ class NewRecordForm extends Component{
                         <div><br/>
                             Wybierz miesiąc <br/>
                             <select onChange={event => this.choseMonth(event)} value={this.state.choseMonth}>
+                                <option value={0}></option>
                                 <option value={1}>Styczeń</option>
                                 <option value={2}>Luty</option>
                                 <option value={3}>Marzec</option>
@@ -78,6 +79,7 @@ class NewRecordForm extends Component{
                         <div><br/>
                             Wybierz rok<br/>
                             <select onChange={event => this.choseYear(event)} value={this.state.choseYear}>
+                                <option></option>
                                 <option>2018</option>
                                 <option>2017</option>
                                 <option>2016</option>
@@ -89,7 +91,7 @@ class NewRecordForm extends Component{
 
                     </div>
                     <div className="homeOffice">
-                        <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca i będziesz mógł to edytować.</div>
+                        <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca, będziesz mógł to edytować.</div>
                         <div>
                             <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
                         </div>
@@ -101,6 +103,7 @@ class NewRecordForm extends Component{
                         </div>
                         <div>
                             <select  onChange={e => this.changeSelect(e)}>
+                                <option></option>
                                 <option>Dojazd do pracy</option>
                                 <option>Dojazd do klienta</option>
                                 <option>Transport towaru</option>

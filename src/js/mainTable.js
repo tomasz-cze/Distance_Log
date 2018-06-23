@@ -10,6 +10,7 @@ class MainTable extends Component{
         this.state = {
             table1: [],
             popUpStatus: false,
+            rate: ""
         }
     }
 
@@ -28,6 +29,7 @@ class MainTable extends Component{
             table1: result
         });
     }
+
     showPopUp = (index) => {
         this.setState ({
             popUpStatus: true,
@@ -57,21 +59,50 @@ class MainTable extends Component{
     };
 
     render(){
+        let rate = "";
+        if(this.props.capacity == 0) {
+            rate = 0.5214;
+        } else {
+            rate = 0.8358
+        }
+        let kms = 0;
+        let wartsum = 0;
         let calendar = this.state.table1.map((el, index)=>{
             if (typeof el.props === 'undefined') {
+                kms += Number(this.props.km);
+                wartsum += Number((this.props.km * rate ).toFixed(2));
                 return <NewRow select={this.props.select} addNewRow={this.addNewRow} capacity={this.props.capacity} km={this.props.km}
                                remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint}
                                workPoint={this.props.workPoint} showPopUp={this.showPopUp}/>
             } else {
+                kms += Number(el.props.km);
+                wartsum += Number((el.props.km * rate ).toFixed(2));
                 return el;
             }
         });
         return (
                 <div className="mainTable container">
                     <div>
-                        <div className="printHeader"></div>
+                        <section className="printHeader">
+                            <div>
+                            </div>
+                        </section>
                     </div>
                     <div className="table">
+                        <section className="weekends">
+                            <div>
+                                Usuń niedziele
+                                <br/>
+                                <input type="checkbox"/>
+                            </div>
+                            <div>
+                                Usuń soboty i niedziele
+                                <br/>
+                                <input type="checkbox"/>
+                            </div>
+
+                        </section>
+
                         <table>
                             <tbody>
                             <tr>
@@ -91,9 +122,9 @@ class MainTable extends Component{
                                 <th></th>
                                 <th></th>
                                 <th>Razem kilometrów</th>
-                                <th></th>
+                                <th>{kms} km</th>
                                 <th>Razem Wartość</th>
-                                <th></th>
+                                <th>{(wartsum).toFixed(2)} zł</th>
                                 <th></th>
                                 <th></th>
                             </tr>

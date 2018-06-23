@@ -2,7 +2,9 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("../images/droga2.png"); }
+  background-image: url("../images/spiration dark.png");
+  font-weight: 700;
+  font-family: 'Indie Flower', cursive; }
 
 .container {
   width: 1024px;
@@ -10,19 +12,30 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: #3CBC8D;
+  background-color: #bc9726;
   color: white; }
 
 button {
-  background-color: #3CBC8D;
-  border-radius: 5%; }
+  background-color: #bc9726;
+  border-radius: 5%;
+  color: white;
+  font-family: 'Indie Flower', cursive; }
 
 select {
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: #bc9726;
+  color: white;
+  font-family: 'Josefin Sans','Playfair Display', serif; }
+
+::placeholder {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Josefin Sans','Playfair Display', serif; }
 
 header {
   background-color: white;
-  width: 1630px;
+  width: 100%;
   height: 180px;
   margin-top: -20px;
   padding-top: 20px; }
@@ -31,13 +44,14 @@ header {
     background-size: cover;
     width: 195px;
     height: 160px;
-    float: left; }
+    float: left;
+    margin-left: 20px; }
   header .aplicationDescript {
     float: right;
     width: 800px;
-    padding-top: 50px;
-    padding-right: 75px;
-    padding-left: 50px; }
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 70px; }
 
 .companyForm {
   margin-top: 50px;
@@ -48,24 +62,27 @@ header {
   .companyForm input {
     margin: 5px; }
   .companyForm .companyData {
-    background-color: azure;
+    background-color: #f1e7ca;
     border-radius: 30%;
     width: 250px;
-    height: 250px; }
+    height: 250px;
+    border: 4px solid #bc9726; }
   .companyForm .driverData {
-    background-color: azure;
+    background-color: #f1e7ca;
     border-radius: 30%;
     width: 250px;
-    height: 250px; }
+    height: 250px;
+    border: 4px solid #bc9726; }
   .companyForm .carData {
     padding-top: 50px;
-    background-color: azure;
+    background-color: #f1e7ca;
     border-radius: 30%;
     width: 250px;
-    height: 250px; }
+    height: 250px;
+    border: 4px solid #bc9726; }
 
 form {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px; }
 
 .newRecordForm {
@@ -78,24 +95,26 @@ form {
     .newRecordForm .titleNewRecord h1 {
       text-align: center;
       margin-bottom: 30px;
-      width: 100%; }
+      width: 100%;
+      color: #bc9726; }
   .newRecordForm .calendar {
     display: block;
     width: 150px;
-    background-color: azure;
+    background-color: #f1e7ca;
     float: left;
     text-align: center;
-    background-color: azure;
     border-radius: 30%;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    border: 4px solid #bc9726; }
   .newRecordForm .homeOffice {
     display: block;
     width: 230px;
     float: left;
     text-align: center;
-    background-color: azure;
+    background-color: #f1e7ca;
     border-radius: 30%;
-    padding: 20px; }
+    padding: 20px;
+    border: 4px solid #bc9726; }
 
 .boxTableData {
   display: flex;
@@ -118,16 +137,23 @@ form {
   width: 100%;
   font-size: 10px; }
 
+.weekends {
+  width: 100%;
+  text-align: center;
+  color: #bc9726;
+  font-size: 15px; }
+
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 3px solid blue;
-  background-color: azure; }
+  border: 3px solid #bc9726;
+  background-color: azure;
+  font-family: 'Josefin Sans','Playfair Display', serif; }
 
 th, td {
   text-align: left;
   padding: 8px;
-  border: 1px solid blue;
+  border: 1px solid #bc9726;
   height: 20px; }
 
 tr:nth-child(even) {
@@ -135,9 +161,17 @@ tr:nth-child(even) {
   height: 15px;
   padding: 3px; }
 
+footer {
+  font-family: 'Indie Flower', cursive;
+  color: #bc9726; }
+  footer div:first-child {
+    float: left; }
+  footer div:last-child {
+    float: right; }
+
 .popBackground {
   height: 100vh;
-  background-image: url("../images/droga_noc.jpg");
+  background-image: url("../images/abstract-art-background-696644.jpg");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -146,7 +180,13 @@ tr:nth-child(even) {
   left: 0;
   flex-direction: column; }
   .popBackground .popUp {
-    padding-top: 300px;
+    font-size: 20px;
+    padding-top: 250px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
+    .popBackground .popUp input {
+      margin-top: -10px; }
+      .popBackground .popUp input#checkbox {
+        margin-top: 10px; }

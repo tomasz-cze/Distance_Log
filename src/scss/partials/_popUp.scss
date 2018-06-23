@@ -1,6 +1,7 @@
 .popBackground {
   height: 100vh;
-  background-image: url("../images/droga_noc.jpg");
+  //background-image: url("../images/droga_noc.jpg");
+  background-image: url("../images/abstract-art-background-696644.jpg");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -9,10 +10,18 @@
   left: 0;
   flex-direction: column;
   .popUp {
-    padding-top: 300px;
+    font-size: 20px;
+    padding-top: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    input {
+      margin-top: -10px;
+      &#checkbox {
+        margin-top: 10px;
+      }
+    }
 
   }
 }

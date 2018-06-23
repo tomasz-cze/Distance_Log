@@ -3,8 +3,11 @@
 }
 
 body {
-  background-image: url("../images/droga2.png");
-
+  //background-image: url("../images/droga2.png");
+  background-image: url("../images/spiration dark.png");
+  font-weight: 700;
+  //font-family: 'Josefin Sans','Playfair Display', serif;
+  font-family: 'Indie Flower', cursive;
 }
 
 .container {
@@ -14,15 +17,29 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: #3CBC8D;
+  background-color: #bc9726;
   color: white;
 }
 
 button {
-  background-color: #3CBC8D;
+  background-color: #bc9726;
   border-radius: 5%;
+  color: white;
+  font-family: 'Indie Flower', cursive;
 }
 
 select {
   margin-top: 10px;
+  background-color: #bc9726;
+  color: white;
+  font-family: 'Josefin Sans','Playfair Display', serif;
+
+}
+
+::placeholder {
+  color: white;
+  //font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Josefin Sans','Playfair Display', serif;
 }

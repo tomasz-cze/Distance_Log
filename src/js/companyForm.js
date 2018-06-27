@@ -19,9 +19,13 @@ class CompanyForm extends Component{
 
         }
     }
+
+    // changing state of car capacity
     changeCapacity = (e) => {
         this.props.giveCapacity(e.target.value)
     };
+
+    // changing inputs in Company Form
     change = (event) => {
         this.setState ({
             [event.target.id]: event.target.value

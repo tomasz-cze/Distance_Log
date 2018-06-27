@@ -13,7 +13,7 @@ class MainTable extends Component{
             rate: ""
         }
     }
-
+    //
     componentDidMount (){
         let year = Number(this.props.chosenYear);
         let month = Number(this.props.chosenMonth);
@@ -30,18 +30,20 @@ class MainTable extends Component{
         });
     }
 
+    //  showing PopUP - adding new route to table
     showPopUp = (index) => {
         this.setState ({
             popUpStatus: true,
             currentIndex: index,
         });
     };
+    // closing PopUp and confirm data to add
     hidePopUp = () => {
         this.setState({
            popUpStatus: false
         })
     };
-
+    // removing day from table
     removeDay = (i) => {
         let removedTable = this.state.table1;
         removedTable.splice(i, 1);
@@ -49,7 +51,7 @@ class MainTable extends Component{
             table1: removedTable
         })
     };
-
+    // adding new day in table/ cloning date
     addNewRow = (a, b, c, d) => {
         let addedTable = this.state.table1;
        addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={d} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);

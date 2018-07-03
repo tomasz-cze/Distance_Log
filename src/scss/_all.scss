@@ -8,25 +8,25 @@ body {
   font-weight: 700;
   //font-family: 'Josefin Sans','Playfair Display', serif;
   font-family: 'Indie Flower', cursive;
-}
+};
 
 .container {
   width: 1024px;
   margin: 0 auto;
-}
+};
 
 input {
   margin-top: 10px;
   background-color: #bc9726;
   color: white;
-}
+};
 
 button {
   background-color: #bc9726;
   border-radius: 5%;
   color: white;
   font-family: 'Indie Flower', cursive;
-}
+};
 
 select {
   margin-top: 10px;
@@ -34,7 +34,7 @@ select {
   color: white;
   font-family: 'Josefin Sans','Playfair Display', serif;
 
-}
+};
 
 ::placeholder {
   color: white;
@@ -42,4 +42,4 @@ select {
   font-size: 15px;
   text-align: center;
   font-family: 'Josefin Sans','Playfair Display', serif;
-}
+};

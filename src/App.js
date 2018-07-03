@@ -13,7 +13,7 @@ class App extends Component {
         this.state = {
             capacity: ""
         }
-    }
+    };
 
     giveCapacity = (e) => {
         this.setState ({

@@ -12,7 +12,7 @@ class MainTable extends Component{
             popUpStatus: false,
             rate: ""
         }
-    }
+    };
     //
     componentDidMount (){
         let year = Number(this.props.chosenYear);
@@ -28,7 +28,7 @@ class MainTable extends Component{
         this.setState({
             table1: result
         });
-    }
+    };
 
     //  showing PopUP - adding new route to table
     showPopUp = (index) => {
@@ -137,6 +137,6 @@ class MainTable extends Component{
                 </div>
         )
     }
-}
+};
 
 export {MainTable}

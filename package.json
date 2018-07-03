@@ -2,6 +2,7 @@
   "name": "record_of_the_vehicle-s_course",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tomasz-cze.github.io/record_of_the_vehicle-s_course",
   "dependencies": {
     "moment": "^2.22.2",
     "node-sass-chokidar": "^1.3.0",

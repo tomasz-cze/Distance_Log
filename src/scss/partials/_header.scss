@@ -1,12 +1,12 @@
 header {
-  background-color: white;
+  background-color: $backgroundColor2;
   width:100%;
   height: 180px;
   margin-top: -20px;
+  color: white;
 
   padding-top: 20px;
   .mainLogo {
-    background-image: url("../images/logo.png");
     background-size: cover;
     width: 195px;
     height: 160px;

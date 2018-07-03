@@ -7,27 +7,27 @@
 .weekends {
   width: 100%;
   text-align: center;
-  color: #bc9726;
+  color: $borderColor;
   font-size: 15px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 3px solid #bc9726;
-  background-color: azure;
+  border: 3px solid $borderColor;
+  background-color: $formBackgroundColor;
   font-family: 'Josefin Sans','Playfair Display', serif;
 }
 
 th, td {
   text-align: left;
   padding: 8px;
-  border: 1px solid #bc9726;
+  border: 1px solid $borderColor;
   height: 20px;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: $formBackgroundColor;
   height: 15px;
   padding: 3px;
 }

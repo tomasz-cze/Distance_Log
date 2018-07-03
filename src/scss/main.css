@@ -2,9 +2,9 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("../images/spiration dark.png");
+  background-color: darkgray;
   font-weight: 700;
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Josefin Sans','Playfair Display', serif; }
 
 .container {
   width: 1024px;
@@ -12,19 +12,16 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: #bc9726;
-  color: white; }
+  background-color: gray; }
 
 button {
-  background-color: #bc9726;
-  border-radius: 5%;
-  color: white;
-  font-family: 'Indie Flower', cursive; }
+  background-color: dimgray;
+  padding-top: 6px;
+  font-family: 'Josefin Sans', cursive; }
 
 select {
   margin-top: 10px;
-  background-color: #bc9726;
-  color: white;
+  background-color: gray;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 ::placeholder {
@@ -34,13 +31,13 @@ select {
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 header {
-  background-color: white;
+  background-color: dimgray;
   width: 100%;
   height: 180px;
   margin-top: -20px;
+  color: white;
   padding-top: 20px; }
   header .mainLogo {
-    background-image: url("../images/logo.png");
     background-size: cover;
     width: 195px;
     height: 160px;
@@ -62,24 +59,26 @@ header {
   .companyForm input {
     margin: 5px; }
   .companyForm .companyData {
-    background-color: #f1e7ca;
-    border-radius: 30%;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726; }
+    border: 1px solid black; }
   .companyForm .driverData {
-    background-color: #f1e7ca;
-    border-radius: 30%;
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726; }
+    border: 1px solid black; }
   .companyForm .carData {
-    padding-top: 50px;
-    background-color: #f1e7ca;
-    border-radius: 30%;
+    padding-top: 65px;
+    background-color: white;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726; }
+    border: 1px solid black; }
 
 form {
   margin-top: 10px;
@@ -93,28 +92,29 @@ form {
     width: 100%;
     display: block; }
     .newRecordForm .titleNewRecord h1 {
+      padding-top: 50px;
       text-align: center;
       margin-bottom: 30px;
       width: 100%;
-      color: #bc9726; }
+      color: black; }
   .newRecordForm .calendar {
     display: block;
     width: 150px;
-    background-color: #f1e7ca;
+    background-color: white;
     float: left;
     text-align: center;
-    border-radius: 30%;
+    border-radius: 5%;
     padding-bottom: 10px;
-    border: 4px solid #bc9726; }
+    border: 1px solid black; }
   .newRecordForm .homeOffice {
     display: block;
     width: 230px;
     float: left;
     text-align: center;
-    background-color: #f1e7ca;
-    border-radius: 30%;
+    background-color: white;
+    border-radius: 5%;
     padding: 20px;
-    border: 4px solid #bc9726; }
+    border: 1px solid black; }
 
 .boxTableData {
   display: flex;
@@ -128,7 +128,8 @@ form {
   display: flex;
   justify-content: center; }
   .createKM button {
-    font-size: 30px; }
+    font-size: 30px;
+    color: white; }
 
 .mainTable {
   width: 100%; }
@@ -140,30 +141,30 @@ form {
 .weekends {
   width: 100%;
   text-align: center;
-  color: #bc9726;
+  color: black;
   font-size: 15px; }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 3px solid #bc9726;
-  background-color: azure;
+  border: 3px solid black;
+  background-color: white;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 th, td {
   text-align: left;
   padding: 8px;
-  border: 1px solid #bc9726;
+  border: 1px solid black;
   height: 20px; }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: white;
   height: 15px;
   padding: 3px; }
 
 footer {
   font-family: 'Indie Flower', cursive;
-  color: #bc9726; }
+  color: black; }
   footer div:first-child {
     float: left; }
   footer div:last-child {

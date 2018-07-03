@@ -9,26 +9,28 @@
     margin: 5px;
   }
   .companyData {
-    background-color: #f1e7ca;
-    border-radius: 30%;
+    padding-top: 20px;
+    background-color: $formBackgroundColor;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726;
+    border: 1px solid $borderColor;
   }
   .driverData {
-    background-color:  #f1e7ca;
-    border-radius: 30%;
+    padding-top: 15px;
+    background-color:  $formBackgroundColor;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726;
+    border: 1px solid $borderColor;
   }
   .carData {
-    padding-top: 50px;
-    background-color:  #f1e7ca;
-    border-radius: 30%;
+    padding-top: 65px;
+    background-color:  $formBackgroundColor;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    border: 4px solid #bc9726;
+    border: 1px solid $borderColor;
   }
 }
 

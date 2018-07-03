@@ -1,13 +1,21 @@
+$backgroundColor1: darkgray;
+$backgroundColor2: dimgray;
+$textColor: black;
+$formBackgroundColor: white;
+$borderColor: black;
+$inputColor: gray;
+$buttonColor1: dimgray;
+$color2: blue;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   //background-image: url("../images/droga2.png");
-  background-image: url("../images/spiration dark.png");
+  background-color: $backgroundColor1;
   font-weight: 700;
-  //font-family: 'Josefin Sans','Playfair Display', serif;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Josefin Sans','Playfair Display', serif;
 };
 
 .container {
@@ -17,21 +25,22 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: #bc9726;
-  color: white;
+  background-color: $inputColor;
+
+
 };
 
 button {
-  background-color: #bc9726;
-  border-radius: 5%;
-  color: white;
-  font-family: 'Indie Flower', cursive;
+  background-color: $buttonColor1 ;
+padding-top: 6px;
+
+  font-family: 'Josefin Sans', cursive;
 };
 
 select {
   margin-top: 10px;
-  background-color: #bc9726;
-  color: white;
+  background-color: $inputColor ;
+
   font-family: 'Josefin Sans','Playfair Display', serif;
 
 };

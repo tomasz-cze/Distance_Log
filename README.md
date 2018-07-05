@@ -1,6 +1,6 @@
 https://tomasz-cze.github.io/record_of_the_vehicle-s_course/
 
-PAGE UNDER CONSTRUCTION
+PAGE STILL UNDER CONSTRUCTION
 
 Website apliacation wrtien in React and styled in Sass.
 

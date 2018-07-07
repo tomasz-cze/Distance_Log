@@ -23,7 +23,6 @@
     text-align: center;
     border-radius: 5%;
     padding-bottom: 10px;
-    border: 1px solid $borderColor;
   }
   .homeOffice {
     display: block;
@@ -33,7 +32,6 @@
     background-color:  $formBackgroundColor;
     border-radius: 5%;
     padding: 20px;
-    border: 1px solid $borderColor;
   }
 }
 
@@ -53,6 +51,7 @@
   button {
     font-size: 30px;
     color: white;
+    width: 100%;
   }
 }
 

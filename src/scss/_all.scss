@@ -1,11 +1,11 @@
-$backgroundColor1: darkgray;
+$backgroundColor1: white;
 $backgroundColor2: dimgray;
 $textColor: black;
-$formBackgroundColor: white;
+$formBackgroundColor: #7fc9ff;
 $borderColor: black;
 $inputColor: gray;
 $buttonColor1: dimgray;
-$color2: blue;
+$color2: white;
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,7 @@ body {
   //background-image: url("../images/droga2.png");
   background-color: $backgroundColor1;
   font-weight: 700;
+  color: $color2;
   font-family: 'Josefin Sans','Playfair Display', serif;
 };
 
@@ -25,13 +26,14 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: $inputColor;
+  background-color: $backgroundColor1;
+  border-radius: 5%;
 
 
 };
 
 button {
-  background-color: $buttonColor1 ;
+  background-color: $formBackgroundColor ;
 padding-top: 6px;
 
   font-family: 'Josefin Sans', cursive;
@@ -39,14 +41,15 @@ padding-top: 6px;
 
 select {
   margin-top: 10px;
-  background-color: $inputColor ;
+  background-color: $backgroundColor1 ;
 
   font-family: 'Josefin Sans','Playfair Display', serif;
 
 };
 
 ::placeholder {
-  color: white;
+  color: black;
+  font-style: italic;
   //font-weight: 700;
   font-size: 15px;
   text-align: center;

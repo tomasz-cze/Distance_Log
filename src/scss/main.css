@@ -2,8 +2,9 @@
   box-sizing: border-box; }
 
 body {
-  background-color: darkgray;
+  background-color: white;
   font-weight: 700;
+  color: white;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 .container {
@@ -12,28 +13,32 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: gray; }
+  background-color: white;
+  border-radius: 5%; }
 
 button {
-  background-color: dimgray;
+  background-color: #7fc9ff;
   padding-top: 6px;
   font-family: 'Josefin Sans', cursive; }
 
 select {
   margin-top: 10px;
-  background-color: gray;
+  background-color: white;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 ::placeholder {
-  color: white;
+  color: black;
+  font-style: italic;
   font-size: 15px;
   text-align: center;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 header {
-  background-color: dimgray;
+  background-image: url("../images/antique-bicycle-on-blue-painted-old-wall-background-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 180px;
+  height: 230px;
   margin-top: -20px;
   color: white;
   padding-top: 20px; }
@@ -60,25 +65,22 @@ header {
     margin: 5px; }
   .companyForm .companyData {
     padding-top: 20px;
-    background-color: white;
+    background-color: #7fc9ff;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
-    border: 1px solid black; }
+    height: 250px; }
   .companyForm .driverData {
     padding-top: 15px;
-    background-color: white;
+    background-color: #7fc9ff;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
-    border: 1px solid black; }
+    height: 250px; }
   .companyForm .carData {
     padding-top: 65px;
-    background-color: white;
+    background-color: #7fc9ff;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
-    border: 1px solid black; }
+    height: 250px; }
 
 form {
   margin-top: 10px;
@@ -100,21 +102,19 @@ form {
   .newRecordForm .calendar {
     display: block;
     width: 150px;
-    background-color: white;
+    background-color: #7fc9ff;
     float: left;
     text-align: center;
     border-radius: 5%;
-    padding-bottom: 10px;
-    border: 1px solid black; }
+    padding-bottom: 10px; }
   .newRecordForm .homeOffice {
     display: block;
     width: 230px;
     float: left;
     text-align: center;
-    background-color: white;
+    background-color: #7fc9ff;
     border-radius: 5%;
-    padding: 20px;
-    border: 1px solid black; }
+    padding: 20px; }
 
 .boxTableData {
   display: flex;
@@ -129,7 +129,8 @@ form {
   justify-content: center; }
   .createKM button {
     font-size: 30px;
-    color: white; }
+    color: white;
+    width: 100%; }
 
 .mainTable {
   width: 100%; }
@@ -145,10 +146,10 @@ form {
   font-size: 15px; }
 
 table {
+  color: black;
   border-collapse: collapse;
   width: 100%;
-  border: 3px solid black;
-  background-color: white;
+  background-color: #7fc9ff;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 th, td {
@@ -158,7 +159,7 @@ th, td {
   height: 20px; }
 
 tr:nth-child(even) {
-  background-color: white;
+  background-color: #7fc9ff;
   height: 15px;
   padding: 3px; }
 

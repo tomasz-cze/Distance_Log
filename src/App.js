@@ -12,13 +12,20 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            capacity: ""
+            capacity: "",
+            routeLength: ""
         }
     };
 
     giveCapacity = (e) => {
         this.setState ({
             capacity: e
+        })
+    };
+
+    giveRouteLength = (e) => {
+        this.setState ({
+            routeLength: e
         })
     };
 
@@ -29,8 +36,8 @@ class App extends Component {
             <div className="background">
                 <Header></Header>
                 <Instruction></Instruction>
-                <CompanyForm giveCapacity={this.giveCapacity}></CompanyForm>
-                <NewRecordForm capacity={this.state.capacity}></NewRecordForm>
+                <CompanyForm giveCapacity={this.giveCapacity} routeLength={this.giveRouteLength}></CompanyForm>
+                <NewRecordForm capacity={this.state.capacity} km={this.state.routeLength}></NewRecordForm>
             </div>
 
             <Footer></Footer>

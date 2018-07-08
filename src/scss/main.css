@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(to bottom, #e4f5fc 0%, #bfe8f9 76%, #bfe8f9 76%, #9fd8ef 95%, #9fd8ef 97%, #9fd8ef 97%, #9fd8ef 97%, #9fd8ef 98%, #9fd8ef 98%, #9fd8ef 100%, #2ab0ed 100%);
+  background: linear-gradient(to bottom, white, #bfe8f9 96%, #bfe8f9 101%);
   font-weight: 700;
   color: white;
   font-family: 'Lato','Playfair Display', serif; }
@@ -43,15 +43,15 @@ header {
   color: white;
   padding-top: 20px; }
   header .mainLogo {
+    background-image: url("../images/logo.png");
     background-size: cover;
     width: 195px;
     height: 160px;
-    float: left;
-    margin-left: 20px; }
+    float: left; }
   header .aplicationDescript {
     float: right;
     width: 800px;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 30px;
     padding-left: 70px; }
 

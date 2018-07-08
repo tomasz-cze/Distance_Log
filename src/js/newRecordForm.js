@@ -10,7 +10,6 @@ class NewRecordForm extends Component{
             homePoint: "",
             workPoint: "",
             btn: false,
-            routeLength: "",
             select: ""
         }
     }
@@ -35,11 +34,7 @@ class NewRecordForm extends Component{
             workPoint: event.target.value
         })
     };
-    changeC = (event) => {
-        this.setState ({
-            routeLength: event.target.value
-        })
-    };
+
     create = () => {
         this.setState ({
             btn: true
@@ -93,7 +88,7 @@ class NewRecordForm extends Component{
                 <div className="createKM">
                     <button onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
                 </div>
-                {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.state.routeLength} workPoint={this.state.workPoint} homePoint={this.state.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
+                {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.props.km} workPoint={this.state.workPoint} homePoint={this.state.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
                 </div>
         )
     }

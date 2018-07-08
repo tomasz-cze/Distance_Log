@@ -10,16 +10,16 @@ header {
 
   padding-top: 20px;
   .mainLogo {
+    background-image: url("../images/logo.png");
     background-size: cover;
     width: 195px;
     height: 160px;
     float: left;
-    margin-left: 20px;
   }
   .aplicationDescript {
     float: right;
     width: 800px;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 30px;
     padding-left: 70px;
   }

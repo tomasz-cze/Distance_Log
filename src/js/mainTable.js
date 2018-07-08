@@ -11,7 +11,7 @@ class MainTable extends Component{
             table1: [],
             popUpStatus: false,
             rate: "",
-            checkbox: false
+            checkbox: false,
         }
     };
     //
@@ -24,14 +24,6 @@ class MainTable extends Component{
 
         for (let i = 1; i <= daysInMonth; i++) {
             const day = new Date(year, month - 1, i);
-            // if (this.state.checkbox1 === true && day.getDay() == 6) {
-            //     alert("działa");
-            //     continue;
-            // }
-            //
-            // if (this.state.checkbox2 === true && (day.getDay() == 5 || day.getDay() == 6)) {
-            //     continue;
-            // }
 
             result.push(day);
         }
@@ -106,7 +98,7 @@ class MainTable extends Component{
             console.log(this.state.checkbox)
         }
         this.removeSunday();
-
+        console.log( this.props.km );
 
 
     };

@@ -15,7 +15,8 @@ class CompanyForm extends Component{
             driverPostCode: "",
             driverCity: "",
             carRegistrationNumber: "",
-            carCapacity: ""
+            carCapacity: "",
+            routeLength: ""
 
         }
     }
@@ -25,11 +26,23 @@ class CompanyForm extends Component{
         this.props.giveCapacity(e.target.value)
     };
 
+    // changeRouteLength = (e) => {
+    //     this.props.routeLength(this.state.routeLength)
+    // };
+
+
     // changing inputs in Company Form
     change = (event) => {
         this.setState ({
             [event.target.id]: event.target.value
         })
+    };
+
+
+    changeC = (event) => {
+        this.setState ({
+            routeLength: event.target.value
+        });
     };
 
     render(){
@@ -79,7 +92,7 @@ class CompanyForm extends Component{
                         <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
                     </div>
                     <div>
-                        <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routLength}/>
+                        <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routeLength}/>
                     </div>
                     <div>
                         <select  onChange={e => this.changeSelect(e)}>

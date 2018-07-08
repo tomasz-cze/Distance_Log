@@ -5,7 +5,8 @@ class NewRow extends Component {
     constructor(props){
         super(props);
         this.state = {
-            text: ""
+            text: "",
+            routeLength: this.props.km
         }
     }
 
@@ -25,7 +26,6 @@ class NewRow extends Component {
     };
 
     render() {
-        console.log( this.props.capacity );
         let el= this.props.el;
         let index = this.props.index;
         let homePoint = this.props.homePoint;

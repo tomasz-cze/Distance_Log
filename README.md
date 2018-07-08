@@ -1,4 +1,4 @@
-https://tomasz-cze.github.io/record_of_the_vehicle-s_course/
+https://tomasz-cze.github.io/Distance_Log/
 
 PAGE STILL UNDER CONSTRUCTION
 

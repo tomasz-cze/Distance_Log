@@ -10,7 +10,9 @@ class MainTable extends Component{
         this.state = {
             table1: [],
             popUpStatus: false,
-            rate: ""
+            rate: "",
+            checkbox1: false,
+            checkbox2: false
         }
     };
     //
@@ -20,8 +22,18 @@ class MainTable extends Component{
         const daysInMonth = new Date(year, month, 0).getDate();
         let result = [];
 
+
         for (let i = 1; i <= daysInMonth; i++) {
             const day = new Date(year, month - 1, i);
+            if (this.state.checkbox1 === true && day.getDay() == 6) {
+                alert("działa");
+                continue;
+            }
+
+            if (this.state.checkbox2 === true && (day.getDay() == 5 || day.getDay() == 6)) {
+                continue;
+            }
+
             result.push(day);
         }
 
@@ -60,6 +72,61 @@ class MainTable extends Component{
         });
     };
 
+    //function removing sunday from table
+    removeSunday =()=> {
+        let removedSundayTable = [];
+        let year = Number(this.props.chosenYear);
+        let month = Number(this.props.chosenMonth);
+        const daysInMonth = new Date(year, month, 0).getDate();
+
+        for (let i = 1; i <= daysInMonth; i++) {
+            const day = new Date(year, month - 1, i);
+            if (this.state.checkbox1 === true && day.getDay() == 7) {
+                continue;
+            }
+            else if (this.state.checkbox2 === true && (day.getDay() == 6 || day.getDay() == 7)) {
+                continue;
+            }
+
+            removedSundayTable.push(day);
+        }
+
+        this.setState({
+            table1: removedSundayTable
+        });
+
+    };
+
+
+
+    checkbox1 = () => {
+        if (this.state.checkbox1 == false) {
+            this.setState({
+                checkbox1: true
+            });
+        } else {
+            this.setState({
+                checkbox1: false
+            });
+        }
+        this.removeSunday()
+
+    };
+    checkbox2 = () => {
+
+        if (this.state.checkbox2 == false) {
+            this.setState({
+                checkbox2: true
+            });
+        } else {
+            this.setState({
+                checkbox2: false
+            });
+        }
+        this.removeSunday()
+    };
+
+
     render(){
         let rate = "";
         if(this.props.capacity == 0) {
@@ -95,12 +162,12 @@ class MainTable extends Component{
                             <div>
                                 Usuń niedziele
                                 <br/>
-                                <input type="checkbox"/>
+                                <input onChange={this.checkbox1} id="removeSundays" type="checkbox" checked={this.props.checkbox1}/>
                             </div>
                             <div>
                                 Usuń soboty i niedziele
                                 <br/>
-                                <input type="checkbox"/>
+                                <input  onChange={this.checkbox2} id="removeWeekends" type="checkbox" checked={this.props.checkbox2}/>
                             </div>
 
                         </section>

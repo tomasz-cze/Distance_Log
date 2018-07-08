@@ -70,6 +70,27 @@ class CompanyForm extends Component{
 
                     </form>
                 </div>
+                <div className="homeOffice">
+                    <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca, będziesz mógł to edytować.</div>
+                    <div>
+                        <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
+                    </div>
+                    <div>
+                        <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
+                    </div>
+                    <div>
+                        <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routLength}/>
+                    </div>
+                    <div>
+                        <select  onChange={e => this.changeSelect(e)}>
+                            <option></option>
+                            <option>Dojazd do pracy</option>
+                            <option>Dojazd do klienta</option>
+                            <option>Transport towaru</option>
+                            <option>Inne</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         )
     }

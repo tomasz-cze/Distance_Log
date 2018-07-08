@@ -3,6 +3,7 @@ import {Header} from "./js/header";
 import {CompanyForm} from "./js/companyForm";
 import {NewRecordForm} from "./js/newRecordForm";
 import {Footer} from "./js/footer";
+import {Instruction} from "./js/Instruction"
 import "./scss/main.css"
 
 
@@ -27,6 +28,7 @@ class App extends Component {
         <div>
             <div className="background">
                 <Header></Header>
+                <Instruction></Instruction>
                 <CompanyForm giveCapacity={this.giveCapacity}></CompanyForm>
                 <NewRecordForm capacity={this.state.capacity}></NewRecordForm>
             </div>

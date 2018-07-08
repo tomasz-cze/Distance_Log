@@ -39,7 +39,7 @@ class NewRow extends Component {
         return (
             <tr height="20px"  key={index}>
                 <td key={index+"a"}><Moment format="D">{el}</Moment></td>
-                <td key={index+"b"}><Moment format="dddd">{el}</Moment></td>
+                <td className="dayOfWeek" key={index+"b"}><Moment format="dddd">{el}</Moment></td>
                 <td key={index+"c"}>{homePoint}-{workPoint}, {workPoint}-{homePoint}</td>
                 <td key={index+"d"}>{this.props.select}</td>
                 <td key={index+"e"}>{this.props.km}</td>

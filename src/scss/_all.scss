@@ -1,7 +1,7 @@
 $backgroundColor1: white;
 $backgroundColor2: dimgray;
 $textColor: black;
-$formBackgroundColor: #7fc9ff;
+$formBackgroundColor: #a3e4ff;
 $borderColor: black;
 $inputColor: gray;
 $buttonColor1: dimgray;
@@ -16,7 +16,7 @@ body {
   background-color: $backgroundColor1;
   font-weight: 700;
   color: $color2;
-  font-family: 'Josefin Sans','Playfair Display', serif;
+  font-family: 'Lato','Playfair Display', serif;
 };
 
 .container {
@@ -36,14 +36,14 @@ button {
   background-color: $formBackgroundColor ;
 padding-top: 6px;
 
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Lato', cursive;
 };
 
 select {
   margin-top: 10px;
   background-color: $backgroundColor1 ;
 
-  font-family: 'Josefin Sans','Playfair Display', serif;
+  font-family: 'Lato','Playfair Display', serif;
 
 };
 
@@ -53,5 +53,5 @@ select {
   //font-weight: 700;
   font-size: 15px;
   text-align: center;
-  font-family: 'Josefin Sans','Playfair Display', serif;
+  font-family: 'Lato','Playfair Display', serif;
 };

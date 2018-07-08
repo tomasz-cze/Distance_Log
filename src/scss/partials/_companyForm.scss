@@ -9,25 +9,35 @@
     margin: 5px;
   }
   .companyData {
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: $formBackgroundColor;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
+    height: 270px;
   }
   .driverData {
-    padding-top: 15px;
+    padding-top: 5px;
     background-color:  $formBackgroundColor;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
+    height: 270px;
   }
   .carData {
-    padding-top: 65px;
+    padding-top: 50px;
     background-color:  $formBackgroundColor;
     border-radius: 5%;
     width: 250px;
-    height: 250px;
+    height: 270px;
+  }
+  .homeOffice {
+    display: block;
+    width: 230px;
+    float: left;
+    text-align: center;
+    background-color:  $formBackgroundColor;
+    border-radius: 5%;
+    padding: 20px;
+    height: 270px;
   }
 }
 

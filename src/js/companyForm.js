@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+const {StandaloneSearchBox} = require("react-google-maps/lib/components/places/StandaloneSearchBox");
+
+
 
 class CompanyForm extends Component{
     constructor(props){
@@ -16,10 +19,40 @@ class CompanyForm extends Component{
             driverCity: "",
             carRegistrationNumber: "",
             carCapacity: "",
-            routeLength: ""
+            routeLength: "",
+            searchBoxA: false,
+            searchBoxB: false,
 
         }
     }
+
+    // function from google.maps to put points into intputs
+
+    componentWillMount() {
+        this.refs = {
+            searchBoxA: null,
+            searchBoxB: null
+        };
+    };
+    onSearchBoxMounted = (ref, searchBox) => {
+        this.refs[searchBox] = ref;
+    };
+
+    onPlacesChanged = (searchBox) => {
+        const places = this.refs[searchBox].getPlaces();
+
+        this.setState({
+            [searchBox]: places
+        })
+    };
+
+    // function to get to aprent name of points
+    changeA = (event) => {
+       this.props.getPointA(event.target.value)
+    };
+    changeB = (event) => {
+       this.props.getPointB(event.target.value)
+    };
 
     // changing state of car capacity
     changeCapacity = (e) => {
@@ -73,9 +106,15 @@ class CompanyForm extends Component{
                 <div className="carData"><br/>  DANE POJAZDU
                     <form>
                         <div>
-                        <input onChange={this.change} id="carRegistrationNumber" type="text" value={this.state.carRegistrationNumber} placeholder="Numer rejestracyjny "/>
-                        <select onChange={e => this.changeCapacity(e)} id="carCapity" placeholder="Pojemność silnika">
-                            <option></option>
+                        <input onChange={this.change}
+                               id="carRegistrationNumber"
+                               type="text"
+                               value={this.state.carRegistrationNumber}
+                               placeholder="Numer rejestracyjny "/>
+                        <select onChange={e => this.changeCapacity(e)}
+                               id="carCapity"
+                               placeholder="Pojemność silnika">
+                            <option>wybierz pojemność</option>
                             <option value={0}>pojemność &lt; 900cm3</option>
                             <option value={1}>pojemność &gt; 900cm3</option>
                         </select>
@@ -86,10 +125,26 @@ class CompanyForm extends Component{
                 <div className="homeOffice">
                     <div>Wybierz trasę z domu do pracy - automatycznie uzupełni każdy dzień miesiąca, będziesz mógł to edytować.</div>
                     <div>
-                        <input onChange={e => this.changeA(e)} type="text" placeholder="Dom" value={this.state.homePoint}/>
+                        <StandaloneSearchBox
+                            ref={ref => this.onSearchBoxMounted(ref, 'searchBoxA')}
+                            onPlacesChanged={() => this.onPlacesChanged('searchBoxA')}>
+                            <input
+                                type="text"
+                                placeholder="Punkt A"
+                                onChange={e => this.changeA(e)}
+                            />
+                        </StandaloneSearchBox>
                     </div>
                     <div>
-                        <input onChange={e => this.changeB(e)} type="text" placeholder="Praca" value={this.state.workPoint}/>
+                        <StandaloneSearchBox
+                            ref={ref => this.onSearchBoxMounted(ref, 'searchBoxB')}
+                            onPlacesChanged={() => this.onPlacesChanged('searchBoxB')}>
+                            <input
+                                type="text"
+                                placeholder="Punkt B"
+                                onChange={e => this.changeB(e)}
+                            />
+                        </StandaloneSearchBox>
                     </div>
                     <div>
                         <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routeLength}/>

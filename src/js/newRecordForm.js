@@ -7,8 +7,6 @@ class NewRecordForm extends Component{
         this.state = {
             chosenMonth: "",
             chosenYear: "",
-            homePoint: "",
-            workPoint: "",
             btn: false,
             select: ""
         }
@@ -24,21 +22,22 @@ class NewRecordForm extends Component{
             chosenYear: event.target.value
         })
     };
-    changeA = (event) => {
-        this.setState ({
-            homePoint: event.target.value
-        })
-    };
-    changeB = (event) => {
-        this.setState ({
-            workPoint: event.target.value
-        })
+
+    // function to get distance
+
+    getDistance = () => {
+        fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${this.props.homePoint}&destinations=${this.props.workPoint}`).then( resp => {
+            return resp.json();
+        }).then( obj => {
+            console.log(obj)
+        });
     };
 
     create = () => {
         this.setState ({
             btn: true
-        })
+        });
+        this.getDistance()
     };
     changeSelect = (event) => {
         this.setState ({
@@ -88,7 +87,7 @@ class NewRecordForm extends Component{
                 <div className="createKM">
                     <button onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
                 </div>
-                {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.props.km} workPoint={this.state.workPoint} homePoint={this.state.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
+                {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.props.km} workPoint={this.props.workPoint} homePoint={this.props.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
                 </div>
         )
     }

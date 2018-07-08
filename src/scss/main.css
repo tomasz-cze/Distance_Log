@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: white;
+  background: linear-gradient(to bottom, #e4f5fc 0%, #bfe8f9 76%, #bfe8f9 76%, #9fd8ef 95%, #9fd8ef 97%, #9fd8ef 97%, #9fd8ef 97%, #9fd8ef 98%, #9fd8ef 98%, #9fd8ef 100%, #2ab0ed 100%);
   font-weight: 700;
   color: white;
   font-family: 'Lato','Playfair Display', serif; }
@@ -17,7 +17,7 @@ input {
   border-radius: 5%; }
 
 button {
-  background-color: #a3e4ff;
+  background-color: #67a7ff;
   padding-top: 6px;
   font-family: 'Lato', cursive; }
 
@@ -65,19 +65,19 @@ header {
     margin: 5px; }
   .companyForm .companyData {
     padding-top: 10px;
-    background-color: #a3e4ff;
+    background-color: #67a7ff;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
   .companyForm .driverData {
     padding-top: 5px;
-    background-color: #a3e4ff;
+    background-color: #67a7ff;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
   .companyForm .carData {
     padding-top: 50px;
-    background-color: #a3e4ff;
+    background-color: #67a7ff;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
@@ -86,7 +86,7 @@ header {
     width: 230px;
     float: left;
     text-align: center;
-    background-color: #a3e4ff;
+    background-color: #67a7ff;
     border-radius: 5%;
     padding: 20px;
     height: 270px; }
@@ -112,7 +112,7 @@ form {
   .newRecordForm .calendar {
     display: block;
     width: 150px;
-    background-color: #a3e4ff;
+    background-color: #67a7ff;
     float: left;
     text-align: center;
     border-radius: 5%;
@@ -151,7 +151,7 @@ table {
   color: black;
   border-collapse: collapse;
   width: 100%;
-  background-color: #a3e4ff;
+  background-color: #67a7ff;
   font-family: 'Josefin Sans','Playfair Display', serif; }
 
 th, td {
@@ -161,7 +161,7 @@ th, td {
   height: 20px; }
 
 tr:nth-child(even) {
-  background-color: #a3e4ff;
+  background-color: #67a7ff;
   height: 15px;
   padding: 3px; }
 

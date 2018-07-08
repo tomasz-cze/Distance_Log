@@ -11,8 +11,7 @@ class MainTable extends Component{
             table1: [],
             popUpStatus: false,
             rate: "",
-            checkbox1: false,
-            checkbox2: false
+            checkbox: false
         }
     };
     //
@@ -25,14 +24,14 @@ class MainTable extends Component{
 
         for (let i = 1; i <= daysInMonth; i++) {
             const day = new Date(year, month - 1, i);
-            if (this.state.checkbox1 === true && day.getDay() == 6) {
-                alert("działa");
-                continue;
-            }
-
-            if (this.state.checkbox2 === true && (day.getDay() == 5 || day.getDay() == 6)) {
-                continue;
-            }
+            // if (this.state.checkbox1 === true && day.getDay() == 6) {
+            //     alert("działa");
+            //     continue;
+            // }
+            //
+            // if (this.state.checkbox2 === true && (day.getDay() == 5 || day.getDay() == 6)) {
+            //     continue;
+            // }
 
             result.push(day);
         }
@@ -72,7 +71,7 @@ class MainTable extends Component{
         });
     };
 
-    //function removing sunday from table
+    //function removing weekends from table
     removeSunday =()=> {
         let removedSundayTable = [];
         let year = Number(this.props.chosenYear);
@@ -81,49 +80,35 @@ class MainTable extends Component{
 
         for (let i = 1; i <= daysInMonth; i++) {
             const day = new Date(year, month - 1, i);
-            if (this.state.checkbox1 === true && day.getDay() == 7) {
+            if (this.state.checkbox === false && day.getDay() === 0) {
                 continue;
             }
-            else if (this.state.checkbox2 === true && (day.getDay() == 6 || day.getDay() == 7)) {
+            if (this.state.checkbox === false && day.getDay() === 6) {
                 continue;
             }
-
             removedSundayTable.push(day);
         }
-
         this.setState({
             table1: removedSundayTable
         });
-
     };
 
-
-
-    checkbox1 = () => {
-        if (this.state.checkbox1 == false) {
+    checkbox = () => {
+        if (this.state.checkbox == false) {
             this.setState({
-                checkbox1: true
+                checkbox: true
             });
+            console.log(this.state.checkbox)
         } else {
             this.setState({
-                checkbox1: false
+                checkbox: false
             });
+            console.log(this.state.checkbox)
         }
-        this.removeSunday()
+        this.removeSunday();
 
-    };
-    checkbox2 = () => {
 
-        if (this.state.checkbox2 == false) {
-            this.setState({
-                checkbox2: true
-            });
-        } else {
-            this.setState({
-                checkbox2: false
-            });
-        }
-        this.removeSunday()
+
     };
 
 
@@ -160,14 +145,9 @@ class MainTable extends Component{
                     <div className="table">
                         <section className="weekends">
                             <div>
-                                Usuń niedziele
+                                Usuń weekendy
                                 <br/>
-                                <input onChange={this.checkbox1} id="removeSundays" type="checkbox" checked={this.props.checkbox1}/>
-                            </div>
-                            <div>
-                                Usuń soboty i niedziele
-                                <br/>
-                                <input  onChange={this.checkbox2} id="removeWeekends" type="checkbox" checked={this.props.checkbox2}/>
+                                <input onChange={this.checkbox} id="removeSundays" type="checkbox" checked={this.props.checkbox1}/>
                             </div>
 
                         </section>

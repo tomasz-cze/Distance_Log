@@ -17,7 +17,7 @@ class App extends Component {
         super(props);
         this.state = {
             capacity: "",
-            routeLength: "",
+            distance: "",
             pointA: "",
             pointB: ""
         }
@@ -29,9 +29,9 @@ class App extends Component {
         })
     };
 
-    giveRouteLength = (e) => {
+    getDistance = (e) => {
         this.setState ({
-            routeLength: e
+            distance: e
         })
     };
 
@@ -56,14 +56,14 @@ class App extends Component {
                 <Instruction></Instruction>
                 <CompanyForm
                     giveCapacity={this.giveCapacity}
-                    routeLength={this.giveRouteLength}
+                    getDistance={this.getDistance}
                     getPointA={this.getPointA}
                     getPointB={this.getPointB}>
 
                 </CompanyForm>
                 <NewRecordForm
                     capacity={this.state.capacity}
-                    km={this.state.routeLength}
+                    km={this.state.distance}
                     homePoint={this.state.pointA}
                     workPoint={this.state.pointB}
                 >

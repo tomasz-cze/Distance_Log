@@ -21,7 +21,10 @@ class CompanyForm extends Component{
             carCapacity: "",
             routeLength: "",
             searchBoxA: false,
-            searchBoxB: false
+            searchBoxB: false,
+            distance: "",
+            pointA: "",
+            pointB: ""
         }
     }
 
@@ -47,10 +50,16 @@ class CompanyForm extends Component{
 
     // function to get to aprent name of points
     changeA = (event) => {
-       this.props.getPointA(event.target.value)
+       this.props.getPointA(event.target.value);
+        this.setState ({
+            pointA: event.target.value
+        })
     };
     changeB = (event) => {
-       this.props.getPointB(event.target.value)
+       this.props.getPointB(event.target.value);
+        this.setState ({
+            pointB: event.target.value
+        })
     };
 
     // changing state of car capacity
@@ -58,9 +67,9 @@ class CompanyForm extends Component{
         this.props.giveCapacity(e.target.value)
     };
 
-    // changeRouteLength = (e) => {
-    //     this.props.routeLength(this.state.routeLength)
-    // };
+    giveDistance = (e) => {
+        this.props.getDistance(this.state.distance)
+    };
 
 
     // changing inputs in Company Form
@@ -70,12 +79,57 @@ class CompanyForm extends Component{
         })
     };
 
+    // function to get distance from google maps
 
-    changeC = (event) => {
-        this.setState ({
-            routeLength: event.target.value
-        });
+
+    getDist(dest){
+        const wrappedCallback = (...args) => this.callback(...args);
+        var self = this;
+        var origin = this.state.pointA,
+            destination = this.state.pointB,
+            service = new window.google.maps.DistanceMatrixService();
+
+        service.getDistanceMatrix(
+            {
+                origins: [origin],
+                destinations: [destination],
+                travelMode: window.google.maps.TravelMode.DRIVING,
+                avoidHighways: true,
+                avoidTolls: true,
+                unitSystem: window.google.maps.UnitSystem.METRIC
+            },
+            wrappedCallback
+        );
+    }
+
+    callback(response, status) {
+        const self = this;
+        if(status === "OK") {
+            console.log(response);
+            var dest = response.destinationAddresses[0];
+            var dist = response.rows[0].elements[0].distance.text;
+            self.setState ({
+                distance: dist
+            });
+            return response;
+        } else {
+            alert("Error: " + status);
+        }
+    }
+
+    calculateDistance = () => {
+        this.getDist();
+        this.giveDistance()
+
     };
+
+
+
+    // changeC = (event) => {
+    //     this.setState ({
+    //         distance: event.target.value
+    //     });
+    // };
 
     render(){
         return (
@@ -146,16 +200,10 @@ class CompanyForm extends Component{
                         </StandaloneSearchBox>
                     </div>
                     <div>
-                        <input onChange={e => this.changeC(e)} type="number" placeholder="ilość km" value={this.state.routeLength}/>
+                        <input onChange={e => this.changeC(e)} type="text" placeholder="ilość km" value={this.state.distance.slice(0,-3)} disabled/>
                     </div>
                     <div>
-                        <select  onChange={e => this.changeSelect(e)}>
-                            <option></option>
-                            <option>Dojazd do pracy</option>
-                            <option>Dojazd do klienta</option>
-                            <option>Transport towaru</option>
-                            <option>Inne</option>
-                        </select>
+                        <button onClick={this.calculateDistance}>Oblicz trasę</button>
                     </div>
                 </div>
             </div>

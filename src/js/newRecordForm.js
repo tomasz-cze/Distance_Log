@@ -8,7 +8,8 @@ class NewRecordForm extends Component{
             chosenMonth: "",
             chosenYear: "",
             btn: false,
-            select: ""
+            select: "",
+            distance: ""
         }
     }
 
@@ -20,24 +21,16 @@ class NewRecordForm extends Component{
     choseYear = (event) => {
         this.setState ({
             chosenYear: event.target.value
-        })
-    };
-
-    // function to get distance
-
-    getDistance = () => {
-        fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${this.props.homePoint}&destinations=${this.props.workPoint}&key=AIzaSyCHLkGybBl2IV06di-2xI0efSqo6NM_LFk`).then( resp => {
-            return resp.json();
-        }).then( obj => {
-            console.log(obj)
         });
+
     };
+
 
     create = () => {
         this.setState ({
-            btn: true
+            btn: true,
         });
-        this.getDistance()
+
     };
     changeSelect = (event) => {
         this.setState ({

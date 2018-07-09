@@ -139,7 +139,7 @@ class MainTable extends Component{
                             <div>
                                 Usuń weekendy
                                 <br/>
-                                <input onChange={this.checkbox} id="removeSundays" type="checkbox" checked={this.props.checkbox1}/>
+                                <input onChange={this.checkbox} id="removeSundays" type="checkbox" checked={this.props.checkbox}/>
                             </div>
 
                         </section>

@@ -21,8 +21,7 @@ class CompanyForm extends Component{
             carCapacity: "",
             routeLength: "",
             searchBoxA: false,
-            searchBoxB: false,
-
+            searchBoxB: false
         }
     }
 

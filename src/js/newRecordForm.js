@@ -26,7 +26,7 @@ class NewRecordForm extends Component{
     // function to get distance
 
     getDistance = () => {
-        fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${this.props.homePoint}&destinations=${this.props.workPoint}`).then( resp => {
+        fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=${this.props.homePoint}&destinations=${this.props.workPoint}&key=AIzaSyCHLkGybBl2IV06di-2xI0efSqo6NM_LFk`).then( resp => {
             return resp.json();
         }).then( obj => {
             console.log(obj)

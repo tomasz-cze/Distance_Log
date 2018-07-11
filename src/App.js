@@ -72,13 +72,13 @@ class App extends Component {
             <div>
 
 
-                <MyMapComponent
-                    markerA={this.state.searchBoxA}
-                    markerB={this.state.searchBoxB}
-                    loadingElement={<div style={{height: `100%`}}/>}
-                    containerElement={<div style={{height: `400px`}}/>}
-                    mapElement={<div style={{height: `100%`}}/>}
-                />
+                {/*<MyMapComponent*/}
+                    {/*markerA={this.state.searchBoxA}*/}
+                    {/*markerB={this.state.searchBoxB}*/}
+                    {/*loadingElement={<div style={{height: `100%`}}/>}*/}
+                    {/*containerElement={<div style={{height: `400px`}}/>}*/}
+                    {/*mapElement={<div style={{height: `100%`}}/>}*/}
+                {/*/>*/}
             </div>
 
             <Footer></Footer>

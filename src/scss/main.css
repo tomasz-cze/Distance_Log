@@ -2,10 +2,10 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(to bottom, white, #bfe8f9 96%, #bfe8f9 101%);
+  background-color: white;
   font-weight: 700;
   color: white;
-  font-family: 'Lato','Playfair Display', serif; }
+  font-family: 'Roboto','Lato','Playfair Display', serif; }
 
 .container {
   width: 1024px;
@@ -14,33 +14,80 @@ body {
 input {
   margin-top: 10px;
   background-color: white;
-  border-radius: 5%; }
+  border-style: none;
+  border-bottom: 2px solid #5b84ff;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  border-color: #599bb3; }
 
-button {
-  background-color: #67a7ff;
-  padding-top: 6px;
-  font-family: 'Lato', cursive; }
+.button {
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background-color: #599bb3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+  background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+  background-color: #599bb3;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a; }
+
+.button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+  background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+  background-color: #408c99; }
+
+.button:active {
+  position: relative;
+  top: 1px; }
 
 select {
   margin-top: 10px;
   background-color: white;
-  font-family: 'Lato','Playfair Display', serif; }
+  border-style: none;
+  border-bottom: 2px solid #5b84ff;
+  color: #5b84ff;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  border-color: #599bb3; }
 
 ::placeholder {
-  color: black;
-  font-style: italic;
+  color: #599bb3;
+  opacity: 30%;
   font-size: 15px;
   text-align: center;
   font-family: 'Lato','Playfair Display', serif; }
 
 header {
-  background-image: url("../images/antique-bicycle-on-blue-painted-old-wall-background-header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 230px;
   margin-top: -20px;
   color: white;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  color: #599bb3;
   padding-top: 20px; }
   header .mainLogo {
     background-image: url("../images/logo.png");
@@ -60,24 +107,29 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px dotted #5b84ff;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  color: #599bb3; }
   .companyForm input {
     margin: 5px; }
   .companyForm .companyData {
     padding-top: 10px;
-    background-color: #67a7ff;
+    background-color: white;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
   .companyForm .driverData {
     padding-top: 5px;
-    background-color: #67a7ff;
+    background-color: white;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
   .companyForm .carData {
     padding-top: 50px;
-    background-color: #67a7ff;
+    background-color: white;
     border-radius: 5%;
     width: 250px;
     height: 270px; }
@@ -86,7 +138,7 @@ header {
     width: 230px;
     float: left;
     text-align: center;
-    background-color: #67a7ff;
+    background-color: white;
     border-radius: 5%;
     padding: 20px;
     height: 270px; }
@@ -99,24 +151,36 @@ form {
   display: block;
   margin-bottom: 20px;
   width: 1024px;
-  margin-top: 50px; }
-  .newRecordForm .titleNewRecord {
-    width: 100%;
-    display: block; }
-    .newRecordForm .titleNewRecord h1 {
-      padding-top: 50px;
-      text-align: center;
-      margin-bottom: 30px;
-      width: 100%;
-      color: black; }
-  .newRecordForm .calendar {
-    display: block;
-    width: 150px;
-    background-color: #67a7ff;
-    float: left;
+  margin-top: 50px;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  color: #599bb3; }
+  .newRecordForm .photo3 {
+    background-image: url("../images/photo3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 5%; }
+
+.titleNewRecord {
+  width: 100%;
+  display: block; }
+  .titleNewRecord h1 {
+    padding-top: 50px;
     text-align: center;
-    border-radius: 5%;
-    padding-bottom: 10px; }
+    margin-bottom: 30px;
+    width: 100%;
+    color: #599bb3; }
+
+.calendar {
+  display: block;
+  width: 50%;
+  background-color: white;
+  float: left;
+  text-align: center;
+  border-radius: 5%;
+  padding-bottom: 10px; }
 
 .boxTableData {
   display: flex;
@@ -130,9 +194,9 @@ form {
   display: flex;
   justify-content: center; }
   .createKM button {
-    font-size: 30px;
+    font-size: 0.5em;
     color: white;
-    width: 100%; }
+    width: 15%; }
 
 .mainTable {
   width: 100%; }
@@ -151,17 +215,20 @@ table {
   color: black;
   border-collapse: collapse;
   width: 100%;
-  background-color: #67a7ff;
-  font-family: 'Josefin Sans','Playfair Display', serif; }
+  background-color: white;
+  font-family: 'Josefin Sans','Playfair Display', serif;
+  border-style: ridge; }
 
 th, td {
   text-align: left;
   padding: 8px;
-  border: 1px solid black;
-  height: 20px; }
+  height: 10px; }
+  thbutton, tdbutton {
+    font-size: 0.1rem;
+    color: white; }
 
 tr:nth-child(even) {
-  background-color: #67a7ff;
+  background-color: white;
   height: 15px;
   padding: 3px; }
 
@@ -196,7 +263,13 @@ footer {
         margin-top: 10px; }
 
 .discription {
-  color: black;
+  color: #599bb3;
+  filter: opacity 30%;
   text-align: left;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: 1px dotted #5b84ff;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  border-color: #599bb3; }

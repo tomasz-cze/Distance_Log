@@ -47,8 +47,8 @@ class NewRow extends Component {
                 <td key={index+"g"}>{(this.props.km * rate ).toFixed(2)}</td>
                 <td key={index+"h"}><textarea onChage={e => this.changeText(e)} value={this.state.text}></textarea></td>
                 <td key={index+"i"}>
-                    <button onClick={element => this.add(index, el)}>Dodaj trasę</button>
-                    <button onClick={element => this.remove(index)}>Usuń</button>
+                    <button className="button" onClick={element => this.add(index, el)}>Dodaj trasę</button>
+                    <button className="button" onClick={element => this.remove(index)}>Usuń</button>
                 </td>
             </tr>
         )

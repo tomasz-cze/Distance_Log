@@ -17,17 +17,27 @@ table {
   width: 100%;
   background-color: $formBackgroundColor;
   font-family: 'Josefin Sans','Playfair Display', serif;
+  border-style: ridge;
 }
 
 th, td {
   text-align: left;
   padding: 8px;
-  border: 1px solid $borderColor;
-  height: 20px;
+  //border-top: 1px solid $borderColor;
+  //border-right: 1px solid $borderColor;
+
+
+  height: 10px;
+  &button {
+    font-size: 0.1rem;
+    color: $formBackgroundColor;
+
+  }
 }
 
 tr:nth-child(even) {
   background-color: $formBackgroundColor;
   height: 15px;
   padding: 3px;
+
 }

@@ -133,7 +133,7 @@ class CompanyForm extends Component{
 
     render(){
         return (
-            <div className="companyForm container">
+            <div className="companyForm container">Uzupełnij dane w poniższym formularzu.
                 <div className="companyData"><br/> DANE FIRMY
                     <form>
                         <input onChange={this.change} id="companyName" type="text" value={this.state.companyName} placeholder="Nazwa firmy"/>

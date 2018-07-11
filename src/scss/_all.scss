@@ -1,11 +1,15 @@
-$backgroundColor1: white;
-$backgroundColor2: dimgray;
-$textColor: black;
-$formBackgroundColor: #67a7ff;
+$backgroundColor1: #5b84ff;
+$backgroundColor2: #5b84ff;
+$textColor: #599bb3;
+$formBackgroundColor: white;
 $borderColor: black;
 $inputColor: gray;
 $buttonColor1: dimgray;
-$color2: white;
+$color2: #ffc3fd;
+
+//@sstyleButton {
+//
+//}
 
 * {
   box-sizing: border-box;
@@ -13,10 +17,12 @@ $color2: white;
 
 body {
   //background-image: url("../images/droga2.png");
-  background: linear-gradient(to bottom, white,#bfe8f9 96%,#bfe8f9 101%);
+  //background: linear-gradient(to bottom, white,#bfe8f9 96%,#bfe8f9 101%);
+  background-color: $formBackgroundColor;
   font-weight: 700;
-  color: $color2;
-  font-family: 'Lato','Playfair Display', serif;
+  color: $formBackgroundColor;
+  font-family: 'Roboto','Lato','Playfair Display', serif;
+
 };
 
 .container {
@@ -26,30 +32,84 @@ body {
 
 input {
   margin-top: 10px;
-  background-color: $backgroundColor1;
-  border-radius: 5%;
+  background-color: $formBackgroundColor;
+  border-style: none;
+  border-bottom: 2px solid $backgroundColor2;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  border-color:#599bb3;
 
 
 };
 
-button {
-  background-color: $formBackgroundColor ;
-padding-top: 6px;
+//button {
+//  background-color: $formBackgroundColor ;
+//padding-top: 6px;
+//  color: $backgroundColor1;
+//
+//  font-family: 'Lato', cursive;
 
-  font-family: 'Lato', cursive;
-};
+
+  .button {
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color:#599bb3;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    background-color:#599bb3;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+  }
+  .button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+    background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+    background-color:#408c99;
+  }
+  .button:active {
+    position:relative;
+    top:1px;
+  }
+//};
 
 select {
   margin-top: 10px;
-  background-color: $backgroundColor1 ;
-
-  font-family: 'Lato','Playfair Display', serif;
+  background-color: $formBackgroundColor;
+  border-style: none;
+  border-bottom: 2px solid $backgroundColor2;;
+  color: $backgroundColor2;
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  border-color:#599bb3;
 
 };
 
 ::placeholder {
-  color: black;
-  font-style: italic;
+  color: $textColor;
+  opacity: 30%;
+  //font-style: italic;
   //font-weight: 700;
   font-size: 15px;
   text-align: center;

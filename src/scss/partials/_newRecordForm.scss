@@ -10,12 +10,14 @@
   color:#599bb3;
 
   .photo3 {
-    background-image: url("../images/photo3.png");
+    background-image: url("../images/photo3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30%;
-    height: 5%;
-  }
+    width: 400px;
+    position: absolute;
+    height: 200px;
+    margin-top: -10%;
+    }
 }
 
   .titleNewRecord {

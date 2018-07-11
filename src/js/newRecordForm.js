@@ -79,7 +79,6 @@ class NewRecordForm extends Component{
                 <div className="photo3"/>
                 <div className="createKM">
                     <button className="button" onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
-                    <div className="photo3"/>
                 </div>
                 {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.props.km} workPoint={this.props.workPoint} homePoint={this.props.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
                 </div>

@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf3659c-0fa1-4f4b-8df7-26f9cbb6e3ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/companyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/companyForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/newRecordForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRecordForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/newRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_all.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_companyForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_companyForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_instruction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_instruction.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss" afterDir="false" />
     </list>
@@ -55,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newRecordForm.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newRecordForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="80" column="69" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
+            <state relative-caret-position="408">
+              <caret line="80" column="97" selection-start-line="80" selection-start-column="97" selection-end-line="80" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -76,8 +69,8 @@
       <file leaf-file-name="_mainTable.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_mainTable.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -94,17 +87,17 @@
       <file leaf-file-name="_newRecordForm.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="270">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="375">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -143,13 +136,13 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/js/companyForm.js" />
         <option value="$PROJECT_DIR$/src/js/newRow.js" />
-        <option value="$PROJECT_DIR$/src/js/newRecordForm.js" />
-        <option value="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_companyForm.scss" />
-        <option value="$PROJECT_DIR$/src/scss/partials/_header.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_instruction.scss" />
         <option value="$PROJECT_DIR$/src/scss/_all.scss" />
+        <option value="$PROJECT_DIR$/src/js/newRecordForm.js" />
         <option value="$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss" />
+        <option value="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" />
+        <option value="$PROJECT_DIR$/src/scss/partials/_header.scss" />
       </list>
     </option>
   </component>
@@ -275,25 +268,24 @@
       <workItem from="1530644028788" duration="3961000" />
       <workItem from="1530965139792" duration="30119000" />
       <workItem from="1531090174765" duration="8876000" />
-      <workItem from="1531262448327" duration="6283000" />
+      <workItem from="1531262448327" duration="9659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112314000" />
+    <option name="totallyTimeSpent" value="115690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-11" width="1623" height="1062" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16082603" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16082603" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="14" visible="true" weight="0.3391116" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.3391116" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,20 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="141" column="127" selection-start-line="141" selection-start-column="127" selection-end-line="141" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/partials/_mainTable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/partials/_companyForm.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -644,24 +622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/partials/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/partials/_instruction.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-479">
-          <caret line="135" column="89" selection-start-line="135" selection-start-column="89" selection-end-line="135" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -672,17 +636,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss">
+    <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="408">
+          <caret line="80" column="97" selection-start-line="80" selection-start-column="97" selection-end-line="80" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
+    <entry file="file://$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="80" column="69" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="141" column="127" selection-start-line="141" selection-start-column="127" selection-end-line="141" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="135" column="89" selection-start-line="135" selection-start-column="89" selection-end-line="135" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/partials/_mainTable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>

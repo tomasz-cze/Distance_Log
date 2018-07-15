@@ -43,7 +43,7 @@ class MainTable extends Component{
     // closing PopUp and confirm data to add
     hidePopUp = () => {
         this.setState({
-           popUpStatus: false
+            popUpStatus: false
         })
     };
     // removing day from table
@@ -57,7 +57,7 @@ class MainTable extends Component{
     // adding new day in table/ cloning date
     addNewRow = (a, b, c, d) => {
         let addedTable = this.state.table1;
-       addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={d} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
+        addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={d} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
         this.setState ({
             tabel1: addedTable
         });
@@ -127,53 +127,53 @@ class MainTable extends Component{
             }
         });
         return (
-                <div className="mainTable container">
-                    <div>
-                        <section className="printHeader">
-                            <div>
-                            </div>
-                        </section>
-                    </div>
-                    <div className="table">
-                        <section className="weekends">
-                            <div>
-                                Usuń weekendy
-                                <br/>
-                                <input onChange={this.checkbox} id="removeSundays" type="checkbox" checked={this.props.checkbox}/>
-                            </div>
-
-                        </section>
-
-                        <table>
-                            <tbody>
-                            <tr>
-                                <th>Data</th>
-                                <th>Dzień tygodnia</th>
-                                <th>Trasa</th>
-                                <th>Cel wyjazdy</th>
-                                <th>Ilość km</th>
-                                <th>Stawka/km</th>
-                                <th>Wartość</th>
-                                <th>Uwagi</th>
-                                <th>Opcje</th>
-                            </tr>
-                            {calendar}
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>Razem kilometrów</th>
-                                <th>{kms} km</th>
-                                <th>Razem Wartość</th>
-                                <th>{(wartsum).toFixed(2)} zł</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            </tbody>
-                        </table>
-                        {this.state.popUpStatus === true && <PopUp getPoints={this.getPoints} addNewRow={this.addNewRow} hidePopUp={this.hidePopUp}/>}
-                    </div>
+            <div className="mainTable container">
+                <div>
+                    <section className="printHeader">
+                        <div>
+                        </div>
+                    </section>
                 </div>
+                <div className="table">
+                    <section className="weekends">
+                        <div>
+                            Usuń weekendy
+                            <br/>
+                            <input onChange={this.checkbox} id="removeSundays" type="checkbox" checked={this.props.checkbox}/>
+                        </div>
+
+                    </section>
+
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>Data</th>
+                            <th>Dzień tygodnia</th>
+                            <th>Trasa</th>
+                            <th>Cel wyjazdy</th>
+                            <th>Ilość km</th>
+                            <th>Stawka/km</th>
+                            <th>Wartość</th>
+                            <th>Uwagi</th>
+                            <th>Opcje</th>
+                        </tr>
+                        {calendar}
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Razem kilometrów</th>
+                            <th>{kms} km</th>
+                            <th>Razem Wartość</th>
+                            <th>{(wartsum).toFixed(2)} zł</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </tbody>
+                    </table>
+                    {this.state.popUpStatus === true && <PopUp getPoints={this.getPoints} addNewRow={this.addNewRow} hidePopUp={this.hidePopUp}/>}
+                </div>
+            </div>
         )
     }
 };

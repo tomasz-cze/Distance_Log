@@ -28,6 +28,24 @@ class CompanyForm extends Component{
         }
     }
 
+    // giveDate = () => {
+    //   this.props.getData(
+    //         this.state.companyName,
+    //         this.state.companyStreet,
+    //         this.state.companyPostCode,
+    //         this.state.companyCity,
+    //         this.state.companyNip,
+    //         this.state.driverName,
+    //         this.state.driverSurname,
+    //         this.state.driverStreet,
+    //         this.state.driverPostCode,
+    //         this.state.driverCity,
+    //         this.state.carRegistrationNumber,
+    //         this.state.carCapacity
+    //   )
+    // };
+
+
     // function from google.maps to put points into intputs
 
     componentWillMount() {
@@ -68,7 +86,7 @@ class CompanyForm extends Component{
     };
 
     giveDistance = (e) => {
-        this.props.getDistance(this.state.distance)
+        this.props.getDistance(this.state.distance.slice(0,-3))
     };
 
 
@@ -117,9 +135,12 @@ class CompanyForm extends Component{
         }
     }
 
+    // function onlick to calculate distance and give it to parent
+
     calculateDistance = () => {
         this.getDist();
-        this.giveDistance()
+        this.giveDistance();
+        this.giveDate;
 
     };
 
@@ -133,7 +154,7 @@ class CompanyForm extends Component{
 
     render(){
         return (
-            <div className="companyForm container">Uzupełnij dane w poniższym formularzu.
+            <div className="companyForm container">Uzupełnij dane w formularzu po prawej stronie.
                 <div className="companyData"><br/> DANE FIRMY
                     <form>
                         <input onChange={this.change} id="companyName" type="text" value={this.state.companyName} placeholder="Nazwa firmy"/>

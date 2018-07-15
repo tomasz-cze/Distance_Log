@@ -11,12 +11,19 @@
   font-size: 15px;
 }
 
+.printHeader {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
 table {
   color: black;
   border-collapse: collapse;
   width: 100%;
   background-color: $formBackgroundColor;
-  font-family: 'Josefin Sans','Playfair Display', serif;
+  font-family: 'Lato','Playfair Display', serif;
   border-style: ridge;
 }
 
@@ -31,7 +38,6 @@ th, td {
   &button {
     font-size: 0.1rem;
     width: 50px;
-
     color: $formBackgroundColor;
 
   }

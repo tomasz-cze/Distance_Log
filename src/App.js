@@ -47,44 +47,44 @@ class App extends Component {
     };
 
 
-  render() {
+    render() {
 
-    return (
-        <div>
-            <div className="background">
-                <Header></Header>
-                <Instruction></Instruction>
-                <CompanyForm
-                    giveCapacity={this.giveCapacity}
-                    getDistance={this.getDistance}
-                    getPointA={this.getPointA}
-                    getPointB={this.getPointB}>
-
-                </CompanyForm>
-                <NewRecordForm
-                    capacity={this.state.capacity}
-                    km={this.state.distance}
-                    homePoint={this.state.pointA}
-                    workPoint={this.state.pointB}
-                >
-                </NewRecordForm>
-            </div>
+        return (
             <div>
+                <div className="background">
+                    <Header></Header>
+                    <Instruction></Instruction>
+                    <CompanyForm
+                        giveCapacity={this.giveCapacity}
+                        getDistance={this.getDistance}
+                        getPointA={this.getPointA}
+                        getPointB={this.getPointB}>
+
+                    </CompanyForm>
+                    <NewRecordForm
+                        capacity={this.state.capacity}
+                        km={this.state.distance}
+                        homePoint={this.state.pointA}
+                        workPoint={this.state.pointB}
+                    >
+                    </NewRecordForm>
+                </div>
+                <div>
 
 
-                {/*<MyMapComponent*/}
+                    {/*<MyMapComponent*/}
                     {/*markerA={this.state.searchBoxA}*/}
                     {/*markerB={this.state.searchBoxB}*/}
                     {/*loadingElement={<div style={{height: `100%`}}/>}*/}
                     {/*containerElement={<div style={{height: `400px`}}/>}*/}
                     {/*mapElement={<div style={{height: `100%`}}/>}*/}
-                {/*/>*/}
-            </div>
+                    {/*/>*/}
+                </div>
 
-            <Footer></Footer>
-        </div>
-    );
-  }
+                <Footer></Footer>
+            </div>
+        );
+    }
 }
 
 export default App;

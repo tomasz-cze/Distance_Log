@@ -1,11 +1,23 @@
 * {
   box-sizing: border-box; }
 
+@media print {
+  Header {
+    display: none; }
+  Instruction {
+    display: none; }
+  CompanyForm {
+    display: none; }
+  NewRecordForm {
+    display: none; }
+  PopUp {
+    display: none; } }
+
 body {
   background-color: white;
   font-weight: 700;
   color: white;
-  font-family: 'Roboto','Lato','Playfair Display', serif; }
+  font-family: 'Roboto', 'Lato', 'Playfair Display', serif; }
 
 .container {
   width: 1024px;
@@ -32,7 +44,7 @@ input {
   background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
   background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
   background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99', GradientType=0);
   background-color: #599bb3;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -54,7 +66,7 @@ input {
   background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
   background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
   background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3', GradientType=0);
   background-color: #408c99; }
 
 .button:active {
@@ -77,7 +89,7 @@ select {
   opacity: 30%;
   font-size: 15px;
   text-align: center;
-  font-family: 'Lato','Playfair Display', serif; }
+  font-family: 'Lato', 'Playfair Display', serif; }
 
 header {
   background-image: url("../images/tlo.jpg");

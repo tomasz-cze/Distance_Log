@@ -43,7 +43,8 @@ class PopUp extends Component {
     //function closing popUp and sending data to table
 
     close = () => {
-        this.props.addNewRow(this.state.pointA, this.state.pointB, this.state.selectedType, this.state.distance);
+        let distancePop = Number(this.state.distance.slice(0,3));
+        this.props.addNewRow(this.state.pointA, this.state.pointB, this.state.selectedType, distancePop);
         this.props.hidePopUp();
         this.getDist()
     };

@@ -57,7 +57,14 @@ class MainTable extends Component{
     // adding new day in table/ cloning date
     addNewRow = (a, b, c, d) => {
         let addedTable = this.state.table1;
-        addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c} capacity={this.props.capacity} km={d} remove={this.removeDay} el={this.state.table1[this.state.currentIndex]} homePoint={a} workPoint={b}  showPopUp={this.showPopUp}/>);
+        addedTable.splice(this.state.currentIndex+1, 0, <NewRow select={c}
+                                                                capacity={this.props.capacity}
+                                                                km={d}
+                                                                remove={this.removeDay}
+                                                                el={this.state.table1[this.state.currentIndex]}
+                                                                homePoint={a}
+                                                                workPoint={b}
+                                                                showPopUp={this.showPopUp}/>);
         this.setState ({
             tabel1: addedTable
         });
@@ -98,9 +105,6 @@ class MainTable extends Component{
             console.log(this.state.checkbox)
         }
         this.removeSunday();
-        console.log( this.props.km );
-
-
     };
 
 

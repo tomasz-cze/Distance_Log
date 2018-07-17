@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf3659c-0fa1-4f4b-8df7-26f9cbb6e3ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/companyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/companyForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/mainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/mainTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/newRecordForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRecordForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/newRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/newRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/popUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/popUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="_all.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/_all.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="companyForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="144" column="6" lean-forward="true" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="6" />
+            <state relative-caret-position="2160">
+              <caret line="144" column="6" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -33,8 +42,8 @@
       <file leaf-file-name="popUp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/popUp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
+            <state relative-caret-position="435">
+              <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -42,7 +51,7 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="304">
               <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -54,7 +63,7 @@
       <file leaf-file-name="newRecordForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="345">
               <caret line="33" selection-start-line="33" selection-end-line="34" />
             </state>
           </provider>
@@ -63,11 +72,20 @@
       <file leaf-file-name="mainTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+            <state relative-caret-position="120">
+              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
               <folding>
                 <element signature="e#80#112#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newRow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -101,17 +119,17 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/js/newRow.js" />
         <option value="$PROJECT_DIR$/src/scss/partials/_companyForm.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_instruction.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_newRecordForm.scss" />
-        <option value="$PROJECT_DIR$/src/scss/_all.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_header.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_mainTable.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/js/mainTable.js" />
         <option value="$PROJECT_DIR$/src/js/newRecordForm.js" />
         <option value="$PROJECT_DIR$/src/js/companyForm.js" />
+        <option value="$PROJECT_DIR$/src/scss/_all.scss" />
+        <option value="$PROJECT_DIR$/src/js/mainTable.js" />
+        <option value="$PROJECT_DIR$/src/js/newRow.js" />
         <option value="$PROJECT_DIR$/src/js/popUp.js" />
       </list>
     </option>
@@ -242,12 +260,12 @@
       <workItem from="1531314923769" duration="8000" />
       <workItem from="1531398262054" duration="1304000" />
       <workItem from="1531664957115" duration="6002000" />
-      <workItem from="1531819514550" duration="2777000" />
+      <workItem from="1531819514550" duration="6373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125958000" />
+    <option name="totallyTimeSpent" value="129554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-11" width="1623" height="1062" extended-state="6" />
@@ -559,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_all.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -580,27 +591,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/Instruction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,20 +612,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
+    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-          <folding>
-            <element signature="e#80#112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2160">
+          <caret line="144" column="6" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_all.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/newRecordForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
+        <state relative-caret-position="345">
           <caret line="33" selection-start-line="33" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,17 +650,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/companyForm.js">
+    <entry file="file://$PROJECT_DIR$/src/js/mainTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="144" column="6" lean-forward="true" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="6" />
+        <state relative-caret-position="120">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding>
+            <element signature="e#80#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/newRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/popUp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
+        <state relative-caret-position="435">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
         </state>
       </provider>
     </entry>

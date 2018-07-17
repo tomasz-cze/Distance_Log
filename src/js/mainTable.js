@@ -131,6 +131,7 @@ class MainTable extends Component{
                 <div>
                     <section className="printHeader">
                         <div>
+                            {this.props.ala}
                         </div>
                     </section>
                 </div>

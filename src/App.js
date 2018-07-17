@@ -16,11 +16,18 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
+            companyName: "",
             capacity: "",
             distance: "",
             pointA: "",
             pointB: ""
         }
+    };
+
+    getData =(a)=> {
+        this.setState ({
+            companyName: a
+        })
     };
 
     giveCapacity = (e) => {
@@ -55,6 +62,7 @@ class App extends Component {
                     <Header></Header>
                     <Instruction></Instruction>
                     <CompanyForm
+                        getData={this.getData}
                         giveCapacity={this.giveCapacity}
                         getDistance={this.getDistance}
                         getPointA={this.getPointA}
@@ -62,6 +70,7 @@ class App extends Component {
 
                     </CompanyForm>
                     <NewRecordForm
+                        a={this.state.a}
                         capacity={this.state.capacity}
                         km={this.state.distance}
                         homePoint={this.state.pointA}

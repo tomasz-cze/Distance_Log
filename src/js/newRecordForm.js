@@ -38,6 +38,7 @@ class NewRecordForm extends Component{
         })
     };
     render(){
+        console.log(this.props.a);
         return (
             <div className="newRecordForm container">
                 <div className="boxTableData" >
@@ -80,7 +81,16 @@ class NewRecordForm extends Component{
                 <div className="createKM">
                     <button className="button" onClick={this.create}>Stwórz KILOMETRÓWKĘ</button>
                 </div>
-                {this.state.btn === true && <MainTable select={this.state.select} capacity={this.props.capacity} km={this.props.km} workPoint={this.props.workPoint} homePoint={this.props.homePoint} chosenMonth={this.state.chosenMonth} chosenYear={this.state.chosenYear}/>}
+                {this.state.btn === true && <MainTable
+                    select={this.state.select}
+                    capacity={this.props.capacity}
+                    km={this.props.km}
+                    workPoint={this.props.workPoint}
+                    homePoint={this.props.homePoint}
+                    chosenMonth={this.state.chosenMonth}
+                    chosenYear={this.state.chosenYear}
+                    ala={this.props.a}
+                />}
             </div>
         )
     }

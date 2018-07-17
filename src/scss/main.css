@@ -92,12 +92,10 @@ select {
   font-family: 'Lato', 'Playfair Display', serif; }
 
 header {
-  background-image: url("../images/tlo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #599bb3;
   width: 100%;
   opacity: 0.8;
-  height: 500px;
+  height: 150px;
   margin-top: -20px;
   color: white;
   -moz-box-shadow: 0px 10px 14px -7px #276873;
@@ -114,7 +112,7 @@ header {
   header .aplicationDescript {
     float: right;
     width: 800px;
-    padding-top: 13%;
+    padding-top: 2%;
     padding-right: 30px;
     padding-left: 70px;
     color: white;
@@ -122,9 +120,10 @@ header {
     font-weight: 800; }
 
 .companyForm {
+  width: 100%;
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
   border-bottom: 1px dotted #5b84ff;
@@ -169,7 +168,7 @@ form {
 .newRecordForm {
   display: block;
   margin-bottom: 20px;
-  width: 1024px;
+  width: 100%;
   margin-top: 50px;
   -moz-box-shadow: 0px 10px 14px -7px #276873;
   -webkit-box-shadow: 0px 10px 14px -7px #276873;
@@ -180,9 +179,10 @@ form {
     background-size: cover;
     background-repeat: no-repeat;
     width: 400px;
-    position: absolute;
     height: 200px;
-    margin-top: -10%; }
+    margin-top: -10%;
+    margin-left: 30%;
+    border-radius: 2%; }
 
 .titleNewRecord {
   width: 100%;
@@ -196,12 +196,13 @@ form {
 
 .calendar {
   display: block;
-  width: 50%;
+  width: 10%;
   background-color: white;
   float: left;
   text-align: center;
   border-radius: 5%;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  margin-left: 25%; }
 
 .boxTableData {
   display: flex;
@@ -215,7 +216,7 @@ form {
   display: flex;
   justify-content: center; }
   .createKM button {
-    font-size: 0.5em;
+    font-size: 1em;
     color: white;
     width: 15%; }
 
@@ -291,8 +292,9 @@ footer {
         margin-top: 10px; }
 
 .discription {
+  margin: 0 auto;
+  width: 100%;
   color: #599bb3;
-  filter: opacity 30%;
   text-align: left;
   display: flex;
   justify-content: center;

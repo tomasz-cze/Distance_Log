@@ -8,7 +8,7 @@ class NewRecordForm extends Component{
             chosenMonth: "",
             chosenYear: "",
             btn: false,
-            select: "",
+            select: "Dojazd do pracy",
             distance: ""
         }
     }

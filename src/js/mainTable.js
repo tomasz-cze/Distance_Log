@@ -66,7 +66,7 @@ class MainTable extends Component{
                                                                 workPoint={b}
                                                                 showPopUp={this.showPopUp}/>);
         this.setState ({
-            tabel1: addedTable
+            table1: addedTable
         });
     };
 
@@ -121,9 +121,16 @@ class MainTable extends Component{
             if (typeof el.props === 'undefined') {
                 kms += Number(this.props.km);
                 wartsum += Number((this.props.km * rate ).toFixed(2));
-                return <NewRow select={this.props.select} addNewRow={this.addNewRow} capacity={this.props.capacity} km={this.props.km}
-                               remove={this.removeDay} index={index} el={el} homePoint={this.props.homePoint}
-                               workPoint={this.props.workPoint} showPopUp={this.showPopUp}/>
+                return <NewRow select={this.props.select}
+                               addNewRow={this.addNewRow}
+                               capacity={this.props.capacity}
+                               km={this.props.km}
+                               remove={this.removeDay}
+                               index={index}
+                               el={el}
+                               homePoint={this.props.homePoint}
+                               workPoint={this.props.workPoint}
+                               showPopUp={this.showPopUp}/>
             } else {
                 kms += Number(el.props.km);
                 wartsum += Number((el.props.km * rate ).toFixed(2));
@@ -176,7 +183,10 @@ class MainTable extends Component{
                         </tr>
                         </tbody>
                     </table>
-                    {this.state.popUpStatus === true && <PopUp getPoints={this.getPoints} addNewRow={this.addNewRow} hidePopUp={this.hidePopUp}/>}
+                    {this.state.popUpStatus === true && <PopUp
+                        // getPoints={this.getPoints}
+                        addNewRow={this.addNewRow}
+                        hidePopUp={this.hidePopUp}/>}
                 </div>
             </div>
         )
